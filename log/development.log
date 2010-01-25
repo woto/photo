@@ -628,3 +628,527 @@ Migrating to CreateTest1s (20100123120631)
   [4;36;1mSQL (107.1ms)[0m   [0;1mSHOW FIELDS FROM `test1s`[0m
   [4;35;1mSQL (3.6ms)[0m   [0mdescribe `test1s`[0m
   [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `test1s`[0m
+
+
+Processing Test1sController#index (for 127.0.0.1 at 2010-01-23 17:35:22) [GET]
+  [4;36;1mTest1 Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: test1s: SELECT * FROM "test1s" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: test1s: SELECT * FROM "test1s" ):
+  app/controllers/test1s_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (1027.2ms)
+Rendered rescues/_request_and_response (88.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (79.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTest1 Load (245.6ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mTest1 Load (0.6ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mTest1 Create (63.9ms)[0m   [0;1mINSERT INTO `test1s` (`name`, `created_at`, `updated_at`) VALUES('aaa', '2010-01-24 15:57:17', '2010-01-24 15:57:17')[0m
+  [4;35;1mSQL (157.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTest1 Load (1.0ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mTest1 Create (1.7ms)[0m   [0;1mINSERT INTO `test1s` (`name`, `created_at`, `updated_at`) VALUES('bbb', '2010-01-24 15:57:24', '2010-01-24 15:57:24')[0m
+  [4;35;1mSQL (138.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTest1 Create (1.6ms)[0m   [0mINSERT INTO `test1s` (`name`, `created_at`, `updated_at`) VALUES('woto', '2010-01-24 16:09:22', '2010-01-24 16:09:22')[0m
+  [4;36;1mSQL (66.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTest1 Load (1.2ms)[0m   [0mSELECT * FROM `test1s` WHERE (`test1s`.`id` = 1) [0m
+  [4;36;1mTest1 Load (1.1ms)[0m   [0;1mSELECT * FROM `test1s` WHERE (`test1s`.`id` = 2) [0m
+  [4;35;1mTest1 Load (1.4ms)[0m   [0mSELECT * FROM `test1s` WHERE (`test1s`.`id` = 3) [0m
+  [4;36;1mTest1 Load (1.0ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.5ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.4ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.5ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (2.1ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.2ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.4ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.5ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (5.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.2ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (1.6ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.2ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.2ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.7ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (7.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mTest1 Create (0.8ms)[0m   [0;1mINSERT INTO `test1s` (`name`, `created_at`, `updated_at`) VALUES('руслан', '2010-01-24 16:14:29', '2010-01-24 16:14:29')[0m
+  [4;35;1mSQL (94.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTest1 Load (0.9ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mTest1 Load (0.7ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (1.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.5ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.9ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (1.1ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;35;1mTest1 Load (0.3ms)[0m   [0mSELECT * FROM `test1s` [0m
+  [4;36;1mTest1 Load (0.3ms)[0m   [0;1mSELECT * FROM `test1s` [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (26.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+Migrating to PaperFormats (20100124165518)
+  [4;36;1mSQL (226.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124165518')[0m
+Migrating to PaperTypes (20100124165554)
+  [4;35;1mSQL (54.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100124165554')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `test1s`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (145.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (261.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+  [4;35;1mSQL (165.1ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (43.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100123120631')[0m
+Migrating to PaperFormats (20100124165518)
+  [4;35;1mSQL (71.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100124165518')[0m
+Migrating to PaperTypes (20100124165554)
+  [4;36;1mSQL (79.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124165554')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `test1s`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `test1s`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (169.5ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (153.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (257.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (37.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100124165554')[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100123120631')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+Migrating to CreatePaperFormats (20100124170340)
+  [4;36;1mSQL (228.2ms)[0m   [0;1mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (55.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100124170340')[0m
+Migrating to CreatePaperTypes (20100124170421)
+  [4;36;1mSQL (186.1ms)[0m   [0;1mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100124170421')[0m
+Migrating to CreatePrinterTypes (20100124170519)
+  [4;36;1mSQL (181.5ms)[0m   [0;1mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100124170519')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `paper_formats`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `paper_formats`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `paper_formats`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `paper_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `paper_types`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `printer_types`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `printer_types`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `test1s`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `test1s`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPaperFormats Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `paper_formats`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mPaperFormats Create (9.0ms)[0m   [0;1mINSERT INTO `paper_formats` (`created_at`, `updated_at`, `height`, `width`) VALUES('2010-01-24 23:11:21', '2010-01-24 23:11:21', 15.0, 10.0)[0m
+  [4;35;1mSQL (83.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPaperTypes Columns (6.1ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mPaperTypes Load (1.2ms)[0m   [0;1mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` = BINARY 'PaperTypes') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPaperFormats Load (1.0ms)[0m   [0mSELECT * FROM `paper_formats` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperFormats Create (0.9ms)[0m   [0mINSERT INTO `paper_formats` (`created_at`, `updated_at`, `height`, `width`) VALUES('2010-01-24 23:15:24', '2010-01-24 23:15:24', 10.0, 9.5)[0m
+  [4;36;1mSQL (411.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPaperFormats Load (0.9ms)[0m   [0mSELECT * FROM `paper_formats` [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperTypes Load (0.6ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` = BINARY 'Матовая') LIMIT 1[0m
+  [4;36;1mPaperTypes Create (0.5ms)[0m   [0;1mINSERT INTO `paper_types` (`created_at`, `updated_at`, `type`) VALUES('2010-01-24 23:16:09', '2010-01-24 23:16:09', 'Матовая')[0m
+  [4;35;1mSQL (97.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperTypes Load (1.3ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` = BINARY 'Глянцевая' AND `paper_types`.id <> 1) LIMIT 1[0m
+  [4;36;1mPaperTypes Update (1.1ms)[0m   [0;1mUPDATE `paper_types` SET `updated_at` = '2010-01-24 23:16:20', `type` = 'Глянцевая' WHERE `id` = 1[0m
+  [4;35;1mSQL (81.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPrinterTypes Columns (5.3ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrinterTypes Load (0.9ms)[0m   [0mSELECT `printer_types`.id FROM `printer_types` WHERE (`printer_types`.`type` = BINARY 'Фотопринтер') LIMIT 1[0m
+  [4;36;1mPrinterTypes Create (0.8ms)[0m   [0;1mINSERT INTO `printer_types` (`created_at`, `updated_at`, `type`) VALUES('2010-01-24 23:17:59', '2010-01-24 23:17:59', 'Фотопринтер')[0m
+  [4;35;1mSQL (93.3ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperTypes Load (0.9ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPaperTypes Load (0.3ms)[0m   [0;1mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperTypes Load (0.2ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mPaperTypes Load (0.8ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` IS NULL) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperTypes Load (0.3ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: id, type
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mPaperTypes Load (0.8ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` = BINARY 'Матовая') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperTypes Load (1.6ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`type` = BINARY 'Матовая') LIMIT 1[0m
+  [4;36;1mPaperTypes Create (0.8ms)[0m   [0;1mINSERT INTO `paper_types` (`created_at`, `updated_at`, `type`) VALUES('2010-01-24 23:43:54', '2010-01-24 23:43:54', 'Матовая')[0m
+  [4;35;1mSQL (130.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPaperTypes Load (1.0ms)[0m   [0mSELECT * FROM `paper_types` [0m
+  [4;36;1mPaperTypes Load (0.2ms)[0m   [0;1mSELECT * FROM `paper_types` [0m
+  [4;35;1mPaperTypes Load (0.4ms)[0m   [0mSELECT * FROM `paper_types` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTest1 Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPaperType Columns (17.9ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+Migrating to CreatePaperFormats (20100124170340)
+Migrating to CreatePaperTypes (20100124170421)
+Migrating to CreatePrinterTypes (20100124170519)
+Migrating to CreatePapertypes (20100125093230)
+  [4;36;1mSQL (195.9ms)[0m   [0;1mCREATE TABLE `papertypes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125093230')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `paper_formats`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `paper_formats`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `paper_formats`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `paper_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `paper_types`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `papertypes`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `papertypes`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `papertypes`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `printer_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `printer_types`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `test1s`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPapertype Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `papertypes`[0m
+WARNING: Can't mass-assign these protected attributes: type
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (181.9ms)[0m   [0mDROP TABLE `paper_formats`[0m
+  [4;36;1mSQL (153.4ms)[0m   [0;1mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mDROP TABLE `paper_types`[0m
+  [4;35;1mSQL (145.4ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (56.1ms)[0m   [0mDROP TABLE `papertypes`[0m
+  [4;36;1mSQL (140.9ms)[0m   [0;1mCREATE TABLE `papertypes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (63.3ms)[0m   [0;1mDROP TABLE `printer_types`[0m
+  [4;35;1mSQL (144.9ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mDROP TABLE `test1s`[0m
+  [4;36;1mSQL (143.9ms)[0m   [0;1mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPapertype Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `papertypes`[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (126.8ms)[0m   [0mDROP TABLE `paper_formats`[0m
+  [4;36;1mSQL (203.1ms)[0m   [0;1mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (89.1ms)[0m   [0;1mDROP TABLE `paper_types`[0m
+  [4;35;1mSQL (259.6ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (161.2ms)[0m   [0mDROP TABLE `papertypes`[0m
+  [4;36;1mSQL (200.6ms)[0m   [0;1mCREATE TABLE `papertypes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (659.7ms)[0m   [0;1mDROP TABLE `printer_types`[0m
+  [4;35;1mSQL (304.2ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (76.3ms)[0m   [0mDROP TABLE `test1s`[0m
+  [4;36;1mSQL (283.1ms)[0m   [0;1mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPaperType Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (162.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (324.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+  [4;35;1mSQL (188.6ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100123120631')[0m
+Migrating to CreatePaperFormats (20100124170340)
+  [4;35;1mSQL (183.4ms)[0m   [0mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (53.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170340')[0m
+Migrating to CreatePaperTypes (20100124170421)
+  [4;35;1mSQL (253.1ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (43.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170421')[0m
+Migrating to CreatePrinterTypes (20100124170519)
+  [4;35;1mSQL (203.4ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (41.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170519')[0m
+Migrating to CreatePapertypes (20100125093657)
+  [4;35;1mSQL (141.8ms)[0m   [0mCREATE TABLE `papertypes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (48.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125093657')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `paper_formats`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `paper_formats`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `paper_formats`[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mSHOW FIELDS FROM `paper_types`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `paper_types`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `paper_types`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `papertypes`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `papertypes`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `papertypes`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `printer_types`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `printer_types`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `test1s`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `test1s`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPaperType Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (218.6ms)[0m   [0mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (236.3ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (218.8ms)[0m   [0mCREATE TABLE `papertypes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (194.4ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (168.9ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (169.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (247.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (60.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100125093657')[0m
+  [4;36;1mSQL (117.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100124170519')[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100123120631')[0m
+  [4;36;1mSQL (58.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100124170340')[0m
+  [4;35;1mSQL (64.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100124170421')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (89.5ms)[0m   [0mDROP TABLE `paper_formats`[0m
+  [4;36;1mSQL (132.8ms)[0m   [0;1mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.5ms)[0m   [0;1mDROP TABLE `paper_types`[0m
+  [4;35;1mSQL (153.5ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mDROP TABLE `papertypes`[0m
+  [4;36;1mSQL (121.1ms)[0m   [0;1mCREATE TABLE `papertypes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (44.2ms)[0m   [0;1mDROP TABLE `printer_types`[0m
+  [4;35;1mSQL (141.8ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mDROP TABLE `test1s`[0m
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (247.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+  [4;35;1mSQL (163.2ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (67.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100123120631')[0m
+Migrating to CreatePaperFormats (20100124170340)
+  [4;35;1mSQL (192.4ms)[0m   [0mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (54.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170340')[0m
+Migrating to CreatePaperTypes (20100124170421)
+  [4;35;1mSQL (154.4ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (65.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170421')[0m
+Migrating to CreatePrinterTypes (20100124170519)
+  [4;35;1mSQL (171.3ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (74.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170519')[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `paper_formats`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `paper_formats`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `paper_formats`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `paper_types`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `paper_types`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `paper_types`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `printer_types`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `printer_types`[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mdescribe `test1s`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPaperType Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (113.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (269.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+  [4;35;1mSQL (172.2ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (64.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100123120631')[0m
+Migrating to CreatePaperFormats (20100124170340)
+  [4;35;1mSQL (173.6ms)[0m   [0mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (53.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170340')[0m
+Migrating to CreatePaperTypes (20100124170421)
+  [4;35;1mSQL (193.4ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (54.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170421')[0m
+Migrating to CreatePrinterTypes (20100124170519)
+  [4;35;1mSQL (324.1ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (54.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170519')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW FIELDS FROM `paper_formats`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `paper_formats`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `paper_formats`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `paper_types`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `paper_types`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `paper_types`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `printer_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `printer_types`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `test1s`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (217.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (281.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTest1s (20100123120631)
+  [4;35;1mSQL (171.2ms)[0m   [0mCREATE TABLE `test1s` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (67.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100123120631')[0m
+Migrating to CreatePaperFormats (20100124170340)
+  [4;35;1mSQL (331.1ms)[0m   [0mCREATE TABLE `paper_formats` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `width` float, `height` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (65.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170340')[0m
+Migrating to CreatePaperTypes (20100124170421)
+  [4;35;1mSQL (290.8ms)[0m   [0mCREATE TABLE `paper_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (65.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170421')[0m
+Migrating to CreatePrinterTypes (20100124170519)
+  [4;35;1mSQL (183.5ms)[0m   [0mCREATE TABLE `printer_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (66.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100124170519')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `paper_formats`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `paper_formats`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `paper_formats`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `paper_types`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `paper_types`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `paper_types`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mdescribe `printer_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `printer_types`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `test1s`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPaperType Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;35;1mPaperType Load (0.7ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`name` = BINARY 'Матовая') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`name` = BINARY 'Матовая') LIMIT 1[0m
+  [4;36;1mPaperType Create (0.5ms)[0m   [0;1mINSERT INTO `paper_types` (`name`, `created_at`, `updated_at`) VALUES('Матовая', '2010-01-25 09:52:40', '2010-01-25 09:52:40')[0m
+  [4;35;1mSQL (108.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPaperType Load (1.0ms)[0m   [0;1mSELECT `paper_types`.id FROM `paper_types` WHERE (`paper_types`.`name` = BINARY 'Матовая') LIMIT 1[0m
