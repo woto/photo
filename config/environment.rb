@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   config.gem 'haml'
   config.gem 'paperclip'
   config.gem 'mime-types', :lib => 'mime/types'
+  config.gem "tabs_on_rails", :source => "http://gemcutter.org"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

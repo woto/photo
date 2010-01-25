@@ -1,26 +1,19 @@
-development:
+defaults: &defaults
   adapter: mysql
   encoding: utf8
-  database: photo_development
   pool: 5
   username: woto
   password: 
   socket: /var/run/mysqld/mysqld.sock
+
+development:
+  database: photo_development
+  <<: *defaults
 
 test:
-  adapter: mysql
-  encoding: utf8
   database: photo_test
-  pool: 5
-  username: woto
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
+  <<: *defaults
 
 production:
-  adapter: mysql
-  encoding: utf8
   database: authlogic_example_production
-  pool: 5
-  username: root
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
+  <<: *defaults

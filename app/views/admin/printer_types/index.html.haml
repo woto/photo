@@ -1,0 +1,19 @@
+<h1>Список печатных устройств</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @printer_types.each do |printer_type| %>
+  <tr>
+    <td><%=h printer_type.name %></td>
+    <td><%= link_to 'Просмотр', [:admin, printer_type] %></td>
+    <td><%= link_to 'Редактирование', edit_admin_printer_type_path(printer_type) %></td>
+    <td><%= link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Создать новый тип печатного устройства', new_admin_printer_type_path %>

@@ -1,0 +1,16 @@
+<h1>Editing printer_type</h1>
+
+<% form_for(@printer_type) do |f| %>
+  <%= f.error_messages %>
+  
+  <p>
+    <%= f.label :width %>
+    <%= f.text_field :width %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @printer_type %> |
+<%= link_to 'Back', printer_types_path %>

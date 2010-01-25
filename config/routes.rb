@@ -1,8 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :test2s
 
-  map.resources :test1s
-
+  map.namespace :admin do |admin|
+    admin.resources :printer_types
+    admin.resources :paper_types
+    admin.resources :paper_formats
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

@@ -11,6 +11,14 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 
+<% tabs_tag do |tab| %>
+  <%= tab.simple_upload 'Простая закачка', :action => 'simple_upload' %>
+  <%= tab.javascript_upload 'Javascript закачка', :action => 'javascript_upload' %>
+  <%= tab.flash_upload 'Flash закачка', :action => 'flash_upload' %>
+<% end %>
+
+Текущая закладка <%= current_tab %>
+
 <%= yield %>
 
 </body>

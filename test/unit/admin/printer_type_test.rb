@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Test2Test < ActiveSupport::TestCase
+class Admin::PrinterTypeTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true
