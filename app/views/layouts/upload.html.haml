@@ -1,0 +1,19 @@
+!!!
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
+    %title
+      Test1s:
+      = controller.action_name
+    = stylesheet_link_tag 'scaffold'
+  %body
+    %p{ :style => "color: green" }
+      = flash[:notice]
+    - tabs_tag do |tab|
+    = tab.simple_upload 'Простая закачка', :action => 'simple_upload'
+    = tab.javascript_upload 'Javascript закачка', :action => 'javascript_upload'
+    = tab.flash_upload 'Flash закачка', :action => 'flash_upload'
+    - end
+    Текущая закладка
+    = current_tab
+    = yield

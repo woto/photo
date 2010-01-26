@@ -21,20 +21,20 @@
           %th.last
             \&nbsp;
         - @paper_types.each do |paper_type|
-        %tr{ :class => cycle("odd", "even") }
-          %td
-            = paper_type.id
-          %td
-            = link_to paper_type.name, admin_paper_type_path(paper_type)
-          %td
-            = paper_type.created_at
-          %td.last
-            = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_type_path(paper_type)
-            |
-            = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_paper_type_path(paper_type)
-            |
-            = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_paper_type_path(paper_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
-        - end
+          %tr{ :class => cycle("odd", "even") }
+            %td
+              = paper_type.id
+            %td
+              = link_to paper_type.name, admin_paper_type_path(paper_type)
+            %td
+              = paper_type.created_at
+            %td.last
+              = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_type_path(paper_type)
+              |
+              = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_paper_type_path(paper_type)
+              |
+              = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_paper_type_path(paper_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+          -
       .actions-bar.wat-cf
         .actions
         = will_paginate @paper_types

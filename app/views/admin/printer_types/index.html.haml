@@ -21,20 +21,20 @@
           %th.last
             \&nbsp;
         - @printer_types.each do |printer_type|
-        %tr{ :class => cycle("odd", "even") }
-          %td
-            = printer_type.id
-          %td
-            = link_to printer_type.name, admin_printer_type_path(printer_type)
-          %td
-            = printer_type.created_at
-          %td.last
-            = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_printer_type_path(printer_type)
-            |
-            = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_printer_type_path(printer_type)
-            |
-            = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_printer_type_path(printer_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
-        - end
+          %tr{ :class => cycle("odd", "even") }
+            %td
+              = printer_type.id
+            %td
+              = link_to printer_type.name, admin_printer_type_path(printer_type)
+            %td
+              = printer_type.created_at
+            %td.last
+              = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_printer_type_path(printer_type)
+              |
+              = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_printer_type_path(printer_type)
+              |
+              = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_printer_type_path(printer_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+        -
       .actions-bar.wat-cf
         .actions
         = will_paginate @printer_types

@@ -17,24 +17,28 @@
           %th
             = t("activerecord.attributes.admin_paper_format.width", :default => t("activerecord.labels.width", :default => "Width"))
           %th
+            = t("activerecord.attributes.admin_paper_format.height", :default => t("activerecord.labels.height", :default => "Height"))
+          %th
             = t("web-app-theme.created_at", :default => "Created at")
           %th.last
             \&nbsp;
         - @paper_formats.each do |paper_format|
-        %tr{ :class => cycle("odd", "even") }
-          %td
-            = paper_format.id
-          %td
-            = link_to paper_format.width, admin_paper_format_path(paper_format)
-          %td
-            = paper_format.created_at
-          %td.last
-            = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_format_path(paper_format)
-            |
-            = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_paper_format_path(paper_format)
-            |
-            = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_paper_format_path(paper_format), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
-        - end
+          %tr{ :class => cycle("odd", "even") }
+            %td
+              = paper_format.id
+            %td
+              = link_to paper_format.width, admin_paper_format_path(paper_format)
+            %td
+              = link_to paper_format.height, admin_paper_format_path(paper_format)
+            %td
+              = paper_format.created_at
+            %td.last
+              = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_format_path(paper_format)
+              |
+              = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_paper_format_path(paper_format)
+              |
+              = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_paper_format_path(paper_format), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+        -
       .actions-bar.wat-cf
         .actions
         = will_paginate @paper_formats

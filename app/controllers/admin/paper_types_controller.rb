@@ -1,8 +1,8 @@
-class PaperTypesController < ApplicationController
+class Admin::PaperTypesController < Admin::ApplicationController
   # GET /paper_types
   # GET /paper_types.xml
   def index
-    @paper_types = PaperType.all
+    @paper_types = PaperType.paginate(:per_page => 10, :page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,7 +45,7 @@ class PaperTypesController < ApplicationController
     respond_to do |format|
       if @paper_type.save
         flash[:notice] = 'PaperType was successfully created.'
-        format.html { redirect_to(@paper_type) }
+        format.html { redirect_to([:admin, @paper_type]) }
         format.xml  { render :xml => @paper_type, :status => :created, :location => @paper_type }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class PaperTypesController < ApplicationController
     respond_to do |format|
       if @paper_type.update_attributes(params[:paper_type])
         flash[:notice] = 'PaperType was successfully updated.'
-        format.html { redirect_to(@paper_type) }
+        format.html { redirect_to([:admin, @paper_type]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,7 +78,7 @@ class PaperTypesController < ApplicationController
     @paper_type.destroy
 
     respond_to do |format|
-      format.html { redirect_to(paper_types_url) }
+      format.html { redirect_to(:admin, paper_types_url) }
       format.xml  { head :ok }
     end
   end
