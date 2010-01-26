@@ -1,12 +1,12 @@
-en_us:
-  web-app-theme: 
-    save: Save
-    cancel: Cancel
-    list: List
-    edit: Edit
-    new: New
-    show: Show
-    delete: Delete
+ru:
+  web-app-theme:
+    save: Сохранение
+    cancel: Отмена
+    list: Список
+    edit: Редактирование
+    new: Создание
+    show: Просмотр
+    delete: Удаление
     confirm: Вы уверены?
-    created_at: Created at
-    all: All
+    created_at: Дата создания
+    all: Все
