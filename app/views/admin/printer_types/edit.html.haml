@@ -1,0 +1,15 @@
+%h3 Редактирование печатного устройства
+
+- form_for([:admin, @printer_type]) do |f|
+  %p= f.error_messages
+  
+  %p
+    = f.label :name
+    = f.text_field :name
+  %p= f.submit 'Ок'
+-
+
+%p
+  = link_to 'Просмотр', [:admin, @printer_type] 
+  |
+  = link_to 'К списку', admin_printer_types_path
