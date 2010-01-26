@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :albums
 
+
+  map.root :controller => :albums
+  map.resources :albums
   map.namespace :admin do |admin|
     admin.resources :printer_types
     admin.resources :paper_types

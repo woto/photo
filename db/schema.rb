@@ -9,9 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100125175319) do
+ActiveRecord::Schema.define(:version => 20100126090853) do
 
   create_table "admin_printer_types", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "albums", :force => true do |t|
+    t.string   "name"
+    t.string   "artist"
+    t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

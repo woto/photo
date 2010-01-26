@@ -1,0 +1,21 @@
+** TabsOnRails: initialized properly
+Unable to load admin_printer_type, underlying cause no such file to load -- admin_printer_type 
+
+ /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+./test/test_helper.rb:35
+./test/functional/admin/printer_types_controller_test.rb:1:in `require'
+./test/functional/admin/printer_types_controller_test.rb:1
+/home/woto/.gem/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `load'
+/home/woto/.gem/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+/home/woto/.gem/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
+/home/woto/.gem/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5

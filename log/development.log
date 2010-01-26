@@ -17431,3 +17431,2364 @@ Processing UploadController#simple_upload (for 127.0.0.1 at 2010-01-26 12:04:54)
 Rendering template within layouts/upload
 Rendering upload/simple_upload
 Completed in 28ms (View: 18, DB: 1) | 200 OK [http://127.0.0.1/upload/simple_upload]
+** TabsOnRails: initialized properly
+** TabsOnRails: initialized properly
+** TabsOnRails: initialized properly
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-01-26 12:11:21) [GET]
+  [4;36;1mSQL (80.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 269ms (View: 29, DB: 81) | 200 OK [http://127.0.0.1/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 12:11:33) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 12:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 12:11:42) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:12:19) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mMysql::Error: Table 'photo_development.albums' doesn't exist: SELECT * FROM `albums` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'photo_development.albums' doesn't exist: SELECT * FROM `albums` ):
+  app/controllers/albums_controller.rb:5:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (365.6ms)
+Rendered rescues/_request_and_response (6.4ms)
+Rendering rescues/layout (internal_server_error)
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePaperFormats (20100124170340)
+Migrating to CreatePaperTypes (20100124170421)
+Migrating to CreatePrinterTypes (20100124170519)
+Migrating to CreateSessions (20100125122641)
+Migrating to CreateAdminPrinterTypes (20100125141831)
+Migrating to CreateAlbums (20100126090853)
+  [4;36;1mSQL (336.3ms)[0m   [0;1mCREATE TABLE `albums` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `artist` varchar(255), `date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (178.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100126090853')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (64.3ms)[0m   [0mSHOW FIELDS FROM `admin_printer_types`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `admin_printer_types`[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mSHOW KEYS FROM `admin_printer_types`[0m
+  [4;36;1mSQL (79.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mdescribe `albums`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `albums`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `paper_formats`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `paper_formats`[0m
+  [4;35;1mSQL (9.1ms)[0m   [0mSHOW KEYS FROM `paper_formats`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `paper_types`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mdescribe `paper_types`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `paper_types`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `printer_types`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `printer_types`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mSHOW FIELDS FROM `test1s`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `test1s`[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mSHOW KEYS FROM `test1s`[0m
+  [4;36;1mSQL (15.4ms)[0m   [0;1mSHOW FIELDS FROM `test2s`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mdescribe `test2s`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW KEYS FROM `test2s`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSHOW FIELDS FROM `test3s`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `test3s`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `test3s`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `test4s`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `test4s`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW KEYS FROM `test4s`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:12:47) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Completed in 218ms (View: 181, DB: 11) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:12:53) [GET]
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Completed in 589ms (View: 561, DB: 4) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:12:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (25.7ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('', '', '2010-01-26 09:12:56', '2010-01-26 09:12:56', '2010-01-26')[0m
+  [4;36;1mSQL (95.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/1
+Completed in 354ms (DB: 127) | 302 Found [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:12:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Completed in 109ms (View: 68, DB: 5) | 200 OK [http://127.0.0.1/albums/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:13:00) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Completed in 106ms (View: 74, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:13:03) [GET]
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Completed in 115ms (View: 82, DB: 4) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:13:08) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"zzz", "name"=>"zzz", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (0.6ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('zzz', 'zzz', '2010-01-26 09:13:08', '2010-01-26 09:13:08', '2010-01-26')[0m
+  [4;35;1mSQL (128.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/2
+Completed in 184ms (DB: 133) | 302 Found [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:13:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Completed in 201ms (View: 143, DB: 35) | 200 OK [http://127.0.0.1/albums/2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:13:10) [GET]
+  [4;36;1mAlbum Load (0.7ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 144ms (View: 108, DB: 5) | 200 OK [http://127.0.0.1/albums]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:14:01) [GET]
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 114ms (View: 89, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:14:02) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 90ms (View: 57, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:14:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.8ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/albums
+Rendering albums/edit
+Completed in 142ms (View: 109, DB: 4) | 200 OK [http://127.0.0.1/albums/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:14:10) [GET]
+  [4;36;1mAlbum Load (1.3ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;35;1mAlbum Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 120ms (View: 85, DB: 6) | 200 OK [http://127.0.0.1/albums]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAlbum Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:14:52) [GET]
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+
+ActionView::TemplateError (undefined method `will_paginate' for #<ActionView::Base:0xb6dbfbd0>) on line #43 of app/views/albums/index.html.erb:
+40:         <div class="actions">
+41:         </div>
+42:         
+43:         <%= will_paginate @albums  %>
+44:         
+45:       </div>
+46:     </div>
+
+    app/views/albums/index.html.erb:43
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (193.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:16:28) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6fb07c8>) on line #43 of app/views/albums/index.html.erb:
+40:         <div class="actions">
+41:         </div>
+42:         
+43:         <%= will_paginate @albums  %>
+44:         
+45:       </div>
+46:     </div>
+
+    /home/woto/.gem/ruby/1.8/gems/will_paginate-2.3.11/lib/will_paginate/view_helpers.rb:197:in `total_pages_for_collection'
+    /home/woto/.gem/ruby/1.8/gems/will_paginate-2.3.11/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/albums/index.html.erb:43
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (346.6ms)
+Rendered rescues/_request_and_response (6.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:16:43) [GET]
+  [4;36;1mAlbum Columns (6.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/albums
+Rendering albums/new
+Rendered albums/_form (49.9ms)
+Rendered albums/_sidebar (2.1ms)
+Completed in 181ms (View: 138, DB: 8) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:16:49) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"ee", "name"=>"ee", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.5ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('ee', 'ee', '2010-01-26 09:16:49', '2010-01-26 09:16:49', '2010-01-26')[0m
+  [4;36;1mSQL (64.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/3
+Completed in 127ms (DB: 68) | 302 Found [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:16:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.6ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 3) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 107ms (View: 75, DB: 5) | 200 OK [http://127.0.0.1/albums/3]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:16:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbum Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.6ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 3) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 273ms (View: 243, DB: 5) | 200 OK [http://127.0.0.1/albums/3]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:16:56) [GET]
+  [4;35;1mAlbum Load (0.9ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb7024e0c>) on line #43 of app/views/albums/index.html.erb:
+40:         <div class="actions">
+41:         </div>
+42:         
+43:         <%= will_paginate @albums  %>
+44:         
+45:       </div>
+46:     </div>
+
+    /home/woto/.gem/ruby/1.8/gems/will_paginate-2.3.11/lib/will_paginate/view_helpers.rb:197:in `total_pages_for_collection'
+    /home/woto/.gem/ruby/1.8/gems/will_paginate-2.3.11/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/albums/index.html.erb:43
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (196.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:18:06) [GET]
+  [4;35;1mAlbum Load (0.9ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.5ms)
+Completed in 148ms (View: 117, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:18:09) [GET]
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 153ms (View: 128, DB: 3) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:18:11) [GET]
+  [4;35;1mAlbum Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/albums
+Rendering albums/new
+Rendered albums/_form (41.4ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 115ms (View: 86, DB: 4) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:18:14) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"ddd", "name"=>"ddd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (1.4ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('ddd', 'ddd', '2010-01-26 09:18:14', '2010-01-26 09:18:14', '2010-01-26')[0m
+  [4;35;1mSQL (108.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/4
+Completed in 169ms (DB: 114) | 302 Found [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:18:14) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAlbum Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.9ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 4) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 102ms (View: 70, DB: 4) | 200 OK [http://127.0.0.1/albums/4]
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:18:16) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 4) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 106ms (View: 72, DB: 6) | 200 OK [http://127.0.0.1/albums/4]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:18:18) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/albums
+Rendering albums/new
+Rendered albums/_form (40.6ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 118ms (View: 82, DB: 5) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:18:19) [GET]
+  [4;35;1mAlbum Load (0.8ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/albums
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.5ms)
+Completed in 204ms (View: 171, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:18:42) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 197ms (View: 164, DB: 3) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:18:49) [GET]
+  [4;35;1mAlbum Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (32.2ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 99ms (View: 72, DB: 3) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:19:05) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"раз, два, три", "name"=>"Проверочка", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"22"}}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (0.7ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('Проверочка', 'раз, два, три', '2010-01-26 09:19:05', '2010-01-26 09:19:05', '2010-01-22')[0m
+  [4;35;1mSQL (115.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/5
+Completed in 177ms (DB: 120) | 302 Found [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:19:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mAlbum Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (1.5ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 122ms (View: 81, DB: 7) | 200 OK [http://127.0.0.1/albums/5]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:19:11) [GET]
+  [4;36;1mAlbum Load (0.9ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.5ms)
+Completed in 235ms (View: 200, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:19:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.9ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 102ms (View: 70, DB: 5) | 200 OK [http://127.0.0.1/albums/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:19:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.7ms)
+Completed in 110ms (View: 78, DB: 7) | 200 OK [http://127.0.0.1/albums/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:19:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 95ms (View: 63, DB: 5) | 200 OK [http://127.0.0.1/albums/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:19:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 108ms (View: 72, DB: 5) | 200 OK [http://127.0.0.1/albums/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:19:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.8ms)
+Completed in 113ms (View: 81, DB: 4) | 200 OK [http://127.0.0.1/albums/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:19:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (51.9ms)
+Rendered albums/_sidebar (0.8ms)
+Completed in 149ms (View: 108, DB: 4) | 200 OK [http://127.0.0.1/albums/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:19:39) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (34.2ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 255ms (View: 230, DB: 3) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:19:41) [GET]
+  [4;35;1mAlbum Load (10.5ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.5ms)
+Completed in 264ms (View: 219, DB: 14) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:19:42) [GET]
+  [4;35;1mAlbum Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (32.3ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 101ms (View: 73, DB: 3) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:19:43) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 227ms (View: 195, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:19:44) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (31.1ms)
+Rendered albums/_sidebar (0.5ms)
+Completed in 100ms (View: 72, DB: 3) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:19:54) [GET]
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 180ms (View: 153, DB: 3) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:19:55) [GET]
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 257ms (View: 221, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:19:55) [GET]
+  [4;35;1mAlbum Load (2.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (8.3ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 219ms (View: 184, DB: 12) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:20:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.3ms)
+Completed in 98ms (View: 70, DB: 4) | 200 OK [http://127.0.0.1/albums/1]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:20:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (42.4ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 128ms (View: 94, DB: 4) | 200 OK [http://127.0.0.1/albums/1/edit]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:23:30) [GET]
+  [4;35;1mAlbum Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (39.3ms)
+Rendered albums/_sidebar (0.5ms)
+Completed in 121ms (View: 84, DB: 5) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:23:32) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 220ms (View: 192, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:23:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.7ms)
+Completed in 99ms (View: 67, DB: 5) | 200 OK [http://127.0.0.1/albums/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:24:04) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 291ms (View: 254, DB: 5) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:24:15) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (51.9ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 140ms (View: 102, DB: 5) | 200 OK [http://0.0.0.0/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:24:17) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.7ms)
+Completed in 282ms (View: 247, DB: 4) | 200 OK [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:24:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 125ms (View: 92, DB: 5) | 200 OK [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:24:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 117ms (View: 88, DB: 3) | 200 OK [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:24:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 96ms (View: 68, DB: 3) | 200 OK [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:25:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (25.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 139ms (View: 79, DB: 26) | 200 OK [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:25:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 165ms (View: 125, DB: 6) | 200 OK [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:26:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.9ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/home/woto/rails/photo/app/views/layouts/application.html.erb:7: syntax error, unexpected ':', expecting ')'
+...stic-dark/style", "modalbox" :cache => true ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">\n<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n\t<title>My Cool Albums</title>\n    "
+
+
+
+
+; @output_buffer.concat(( javascript_include_tag :defaults ).to_s); @output_buffer.concat "  \n\t  "
+; @output_buffer.concat(( stylesheet_link_tag "web_app_theme", "web_app_theme_override", "themes/drastic-dark/style", "modalbox" :cache => true ).to_s); @output_buffer.concat "\n</head>\n<body>\n  <div id=\"container\">\n    <div id=\"header\">\n      <h1><a href=\"/\">My Cool Albums</a></h1>\n      <div id=\"user-navigation\">\n        <ul class=\"wat-cf\">\n          <li><a href=\"#\">"
+
+
+
+
+
+
+
+; @output_buffer.concat(( t("web-app-theme.profile", :default => "Profile") ).to_s); @output_buffer.concat "</a></li>\n          <li><a href=\"#\">"
+; @output_buffer.concat(( t("web-app-theme.settings", :default => "Settings") ).to_s); @output_buffer.concat "</a></li>\n          <li><a href=\"/logout\" class=\"logout\">"
+; @output_buffer.concat(( t("web-app-theme.logout", :default => "Logout") ).to_s); @output_buffer.concat "</a></li>\n        </ul>\n      </div>      \n      <div id=\"main-navigation\">\n        <ul class=\"wat-cf\"> <li class=\""
+
+
+
+; @output_buffer.concat(( controller.controller_path == 'albums' ? 'active' : '' ).to_s); @output_buffer.concat "\"><a href=\""; @output_buffer.concat(( albums_path ).to_s); @output_buffer.concat "\">Albums</a></li></ul>\n      </div>\n    </div>    \n    <div id=\"wrapper\" class=\"wat-cf\">\n      <div class=\"flash\">\n        "
+
+
+
+
+;  flash.each do |type, message| 
+@output_buffer.concat "          <div class=\"message "; @output_buffer.concat(( type ).to_s); @output_buffer.concat "\">\n            <p>"
+; @output_buffer.concat(( message ).to_s); @output_buffer.concat "</p>\n          </div>\n        "
+
+;  end 
+@output_buffer.concat "      </div>\n      <div id=\"main\">\n        "
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n        <div id=\"footer\">\n          <div class=\"block\">\n            <p>Copyright &copy; "
+
+
+; @output_buffer.concat(( Time.now.year ).to_s); @output_buffer.concat " Your Site.</p>\n          </div>      \n        </div>\n      </div>\n      <div id=\"sidebar\">\n        "
+
+
+
+
+; @output_buffer.concat(( yield :sidebar ).to_s); @output_buffer.concat "\n      </div>\n    </div>    \n  </div>\n</body>\n</html>\n"
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/woto/rails/photo/app/views/layouts/application.html.erb:50:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/woto/rails/photo/app/controllers/albums_controller.rb:18:in `show'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/sass/plugin/rails.rb:19:in `process_without_compass'
+/var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/woto/rails/photo/app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/woto/rails/photo/app/views/layouts/application.html.erb:7: syntax error, unexpected ':', expecting ')'
+...stic-dark/style", "modalbox" :cache => true ).to_s); @output...
+                              ^) on line #7 of app/views/layouts/application.html.erb:
+4: 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+5: 	<title>My Cool Albums</title>
+6:     <%= javascript_include_tag :defaults %>  
+7: 	  <%= stylesheet_link_tag "web_app_theme", "web_app_theme_override", "themes/drastic-dark/style", "modalbox" :cache => true %>
+8: </head>
+9: <body>
+10:   <div id="container">
+
+    app/views/layouts/application.html.erb:50:in `compile!'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:18:in `show'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (199.4ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:26:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 139ms (View: 109, DB: 3) | 200 OK [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:26:56) [GET]
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (44.3ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 304ms (View: 275, DB: 4) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:26:59) [GET]
+  [4;36;1mAlbum Load (0.9ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.7ms)
+Completed in 259ms (View: 223, DB: 5) | 200 OK [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-01-26 12:27:05) [DELETE]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "id"=>"1"}
+  [4;36;1mAlbum Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Destroy (2.0ms)[0m   [0mDELETE FROM `albums` WHERE `id` = 1[0m
+  [4;36;1mSQL (49.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums
+Completed in 90ms (DB: 56) | 302 Found [http://0.0.0.0/albums/1]
+  [4;35;1mSQL (1.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:27:05) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 196ms (View: 165, DB: 4) | 200 OK [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAlbum Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Album with ID=1):
+  app/controllers/albums_controller.rb:16:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (183.3ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:27:20) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.7ms)
+Completed in 203ms (View: 169, DB: 4) | 200 OK [http://127.0.0.1/albums/]
+  [4;35;1mSQL (1.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-01-26 12:27:25) [DELETE]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "id"=>"2"}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.0ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Destroy (0.7ms)[0m   [0;1mDELETE FROM `albums` WHERE `id` = 2[0m
+  [4;35;1mSQL (61.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums
+Completed in 107ms (DB: 69) | 302 Found [http://127.0.0.1/albums/2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:27:26) [GET]
+  [4;36;1mAlbum Load (0.6ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 151ms (View: 121, DB: 3) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-01-26 12:27:30) [DELETE]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "id"=>"4"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (1.8ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Destroy (0.8ms)[0m   [0mDELETE FROM `albums` WHERE `id` = 4[0m
+  [4;36;1mSQL (103.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums
+Completed in 151ms (DB: 111) | 302 Found [http://127.0.0.1/albums/4]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:27:30) [GET]
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 121ms (View: 95, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (1.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (4.9ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.7ms)
+Completed in 139ms (View: 94, DB: 10) | 200 OK [http://127.0.0.1/albums/3]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:27:35) [GET]
+  [4;35;1mAlbum Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (34.3ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 119ms (View: 91, DB: 3) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:27:40) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"ввв", "name"=>"ддд", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (11.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (0.6ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('ддд', 'ввв', '2010-01-26 09:27:41', '2010-01-26 09:27:41', '2010-01-26')[0m
+  [4;35;1mSQL (81.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/6
+Completed in 163ms (DB: 98) | 302 Found [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:41) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (1.0ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 109ms (View: 74, DB: 9) | 200 OK [http://127.0.0.1/albums/6]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:44) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 137ms (View: 107, DB: 5) | 200 OK [http://127.0.0.1/albums/6]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:27:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (41.3ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 303ms (View: 112, DB: 5) | 200 OK [http://127.0.0.1/albums/6/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#update (for 127.0.0.1 at 2010-01-26 12:27:49) [PUT]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "id"=>"6", "album"=>{"artist"=>"ввв", "name"=>"ддд", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (8.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/6
+Completed in 66ms (DB: 12) | 302 Found [http://127.0.0.1/albums/6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:49) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 102ms (View: 72, DB: 4) | 200 OK [http://127.0.0.1/albums/6]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:54) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (7.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 143ms (View: 100, DB: 12) | 200 OK [http://127.0.0.1/albums/6]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:27:56) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 320ms (View: 288, DB: 5) | 200 OK [http://127.0.0.1/albums/6]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:27:58) [GET]
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 189ms (View: 153, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-01-26 12:28:03) [DELETE]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "id"=>"6"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Destroy (0.6ms)[0m   [0mDELETE FROM `albums` WHERE `id` = 6[0m
+  [4;36;1mSQL (80.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums
+Completed in 123ms (DB: 85) | 302 Found [http://127.0.0.1/albums/6]
+  [4;35;1mSQL (4.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:28:03) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 117ms (View: 92, DB: 8) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:28:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAlbum Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 107ms (View: 76, DB: 4) | 200 OK [http://127.0.0.1/albums/5]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:28:09) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 128ms (View: 94, DB: 7) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:28:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 115ms (View: 80, DB: 5) | 200 OK [http://127.0.0.1/albums/3]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-01-26 12:28:18) [DELETE]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "id"=>"3"}
+  [4;35;1mAlbum Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Destroy (0.8ms)[0m   [0;1mDELETE FROM `albums` WHERE `id` = 3[0m
+  [4;35;1mSQL (72.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums
+Completed in 120ms (DB: 79) | 302 Found [http://127.0.0.1/albums/3]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:28:19) [GET]
+  [4;36;1mAlbum Load (1.0ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 114ms (View: 82, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:28:29) [GET]
+  [4;36;1mAlbum Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (43.5ms)
+Rendered albums/_sidebar (0.5ms)
+Completed in 290ms (View: 255, DB: 6) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:28:31) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.6ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('', '', '2010-01-26 09:28:31', '2010-01-26 09:28:31', '2010-01-26')[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/7
+Completed in 144ms (DB: 85) | 302 Found [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:28:31) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAlbum Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.2ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 126ms (View: 91, DB: 6) | 200 OK [http://127.0.0.1/albums/7]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:28:34) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 175ms (View: 140, DB: 6) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:29:02) [GET]
+  [4;35;1mAlbum Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (36.2ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 117ms (View: 85, DB: 6) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:29:05) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (18.1ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('', '', '2010-01-26 09:29:05', '2010-01-26 09:29:05', '2010-01-26')[0m
+  [4;35;1mSQL (97.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/8
+Completed in 162ms (DB: 118) | 302 Found [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:05) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 102ms (View: 72, DB: 5) | 200 OK [http://0.0.0.0/albums/8]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:29:08) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (47.0ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 149ms (View: 113, DB: 5) | 200 OK [http://0.0.0.0/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:29:11) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.6ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('', '', '2010-01-26 09:29:11', '2010-01-26 09:29:11', '2010-01-26')[0m
+  [4;36;1mSQL (53.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/9
+Completed in 115ms (DB: 58) | 302 Found [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:11) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mAlbum Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.0ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 129ms (View: 92, DB: 5) | 200 OK [http://0.0.0.0/albums/9]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:29:14) [GET]
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (31.8ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 106ms (View: 79, DB: 4) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:29:16) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (1.1ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('', '', '2010-01-26 09:29:16', '2010-01-26 09:29:16', '2010-01-26')[0m
+  [4;35;1mSQL (52.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/10
+Completed in 113ms (DB: 59) | 302 Found [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:17) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 138ms (View: 99, DB: 5) | 200 OK [http://0.0.0.0/albums/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:29:19) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (32.5ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 110ms (View: 83, DB: 4) | 200 OK [http://0.0.0.0/albums/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:29:22) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.6ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('', '', '2010-01-26 09:29:22', '2010-01-26 09:29:22', '2010-01-26')[0m
+  [4;36;1mSQL (105.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/11
+Completed in 167ms (DB: 111) | 302 Found [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:22) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 240ms (View: 212, DB: 5) | 200 OK [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:29:25) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (6.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (33.6ms)
+Rendered albums/_sidebar (0.7ms)
+Completed in 128ms (View: 88, DB: 9) | 200 OK [http://0.0.0.0/albums/11/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#update (for 127.0.0.1 at 2010-01-26 12:29:27) [PUT]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "id"=>"11", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/11
+Completed in 63ms (DB: 6) | 302 Found [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:27) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 114ms (View: 82, DB: 5) | 200 OK [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:29:34) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.9ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (33.8ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 119ms (View: 91, DB: 4) | 200 OK [http://0.0.0.0/albums/11/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#update (for 127.0.0.1 at 2010-01-26 12:29:36) [PUT]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "id"=>"11", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/11
+Completed in 45ms (DB: 6) | 302 Found [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:36) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (5.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 148ms (View: 104, DB: 14) | 200 OK [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:29:39) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (58.8ms)
+Rendered albums/_sidebar (2.1ms)
+Completed in 316ms (View: 146, DB: 7) | 200 OK [http://0.0.0.0/albums/11/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#update (for 127.0.0.1 at 2010-01-26 12:29:42) [PUT]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "id"=>"11", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/11
+Completed in 50ms (DB: 4) | 302 Found [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:42) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 107ms (View: 79, DB: 3) | 200 OK [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:29:44) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (31.1ms)
+Rendered albums/_sidebar (0.5ms)
+Completed in 106ms (View: 79, DB: 5) | 200 OK [http://0.0.0.0/albums/11/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#update (for 127.0.0.1 at 2010-01-26 12:29:47) [PUT]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "id"=>"11", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/11
+Completed in 54ms (DB: 6) | 302 Found [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:29:47) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 100ms (View: 72, DB: 4) | 200 OK [http://0.0.0.0/albums/11]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:29:49) [GET]
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 208ms (View: 182, DB: 4) | 200 OK [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:29:57) [GET]
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (44.0ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 137ms (View: 101, DB: 6) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:30:02) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"", "name"=>"jhh", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (1.0ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('jhh', '', '2010-01-26 09:30:02', '2010-01-26 09:30:02', '2010-01-26')[0m
+  [4;35;1mSQL (67.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/12
+Completed in 140ms (DB: 78) | 302 Found [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:30:02) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mAlbum Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 12) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 97ms (View: 71, DB: 4) | 200 OK [http://0.0.0.0/albums/12]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:30:05) [GET]
+  [4;36;1mAlbum Load (1.5ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 441ms (View: 404, DB: 6) | 200 OK [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:30:12) [GET]
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (43.8ms)
+Rendered albums/_sidebar (0.7ms)
+Completed in 126ms (View: 98, DB: 5) | 200 OK [http://0.0.0.0/albums/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:30:16) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"g", "name"=>"g", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.8ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('g', 'g', '2010-01-26 09:30:16', '2010-01-26 09:30:16', '2010-01-26')[0m
+  [4;36;1mSQL (113.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/13
+Completed in 181ms (DB: 120) | 302 Found [http://0.0.0.0/albums]
+  [4;35;1mSQL (1.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:30:16) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 13) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 128ms (View: 91, DB: 6) | 200 OK [http://0.0.0.0/albums/13]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:30:19) [GET]
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (47.8ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 160ms (View: 122, DB: 4) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:30:23) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"y", "name"=>"y", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (0.8ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('y', 'y', '2010-01-26 09:30:23', '2010-01-26 09:30:23', '2010-01-26')[0m
+  [4;35;1mSQL (52.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/14
+Completed in 120ms (DB: 59) | 302 Found [http://0.0.0.0/albums]
+  [4;36;1mSQL (7.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:30:23) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.8ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 154ms (View: 116, DB: 12) | 200 OK [http://0.0.0.0/albums/14]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:30:26) [GET]
+  [4;36;1mAlbum Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (38.9ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 314ms (View: 108, DB: 9) | 200 OK [http://0.0.0.0/albums/new]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:30:30) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"b", "name"=>"b", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (6.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.6ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('b', 'b', '2010-01-26 09:30:30', '2010-01-26 09:30:30', '2010-01-26')[0m
+  [4;36;1mSQL (59.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/15
+Completed in 137ms (DB: 71) | 302 Found [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:30:30) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mAlbum Columns (15.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.0ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 15) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 208ms (View: 140, DB: 19) | 200 OK [http://0.0.0.0/albums/15]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:30:34) [GET]
+  [4;35;1mAlbum Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (62.2ms)
+Rendered albums/_sidebar (0.5ms)
+Completed in 211ms (View: 160, DB: 5) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:30:38) [POST]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "album"=>{"artist"=>"r", "name"=>"r", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (17.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Create (0.6ms)[0m   [0;1mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('r', 'r', '2010-01-26 09:30:38', '2010-01-26 09:30:38', '2010-01-26')[0m
+  [4;35;1mSQL (79.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/16
+Completed in 206ms (DB: 102) | 302 Found [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:30:39) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mAlbum Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.9ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 156ms (View: 113, DB: 6) | 200 OK [http://0.0.0.0/albums/16]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:30:41) [GET]
+  [4;36;1mAlbum Load (0.7ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (215.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 538ms (View: 288, DB: 221) | 200 OK [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:30:46) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 140ms (View: 104, DB: 7) | 200 OK [http://0.0.0.0/albums?page=2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:30:49) [GET]
+  Parameters: {"page"=>"1"}
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 312ms (View: 281, DB: 3) | 200 OK [http://0.0.0.0/albums?page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:30:52) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.4ms)
+Completed in 101ms (View: 76, DB: 4) | 200 OK [http://0.0.0.0/albums?page=2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:31:51) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mAlbum Load (1.0ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.5ms)
+Completed in 134ms (View: 98, DB: 4) | 200 OK [http://0.0.0.0/albums?page=2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:32:23) [GET]
+  Parameters: {"page"=>"1"}
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.6ms)
+Completed in 315ms (View: 285, DB: 3) | 200 OK [http://0.0.0.0/albums?page=1]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:34:29) [GET]
+  [4;35;1mAlbum Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (47.2ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 289ms (View: 263, DB: 4) | 200 OK [http://0.0.0.0/albums/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:34:31) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 361ms (View: 323, DB: 5) | 200 OK [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:34:35) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.5ms)
+Completed in 97ms (View: 72, DB: 3) | 200 OK [http://0.0.0.0/albums?page=2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:34:38) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (40.8ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 139ms (View: 106, DB: 4) | 200 OK [http://0.0.0.0/albums/16/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#update (for 127.0.0.1 at 2010-01-26 12:35:03) [PUT]
+  Parameters: {"authenticity_token"=>"/o068RCbG8qEEuVKdF1iukpDKl1YOdNflM8kANvhg5k=", "id"=>"16", "album"=>{"artist"=>"Исполнитель", "name"=>"Название альбома", "date(1i)"=>"2006", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mAlbum Update (1.0ms)[0m   [0;1mUPDATE `albums` SET `updated_at` = '2010-01-26 09:35:03', `name` = 'Название альбома', `artist` = 'Исполнитель', `date` = '2006-01-26' WHERE `id` = 16[0m
+  [4;35;1mSQL (55.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/albums/16
+Completed in 124ms (DB: 60) | 302 Found [http://0.0.0.0/albums/16]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:35:04) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mAlbum Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.8ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.5ms)
+Completed in 123ms (View: 93, DB: 4) | 200 OK [http://0.0.0.0/albums/16]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:35:07) [GET]
+  [4;36;1mAlbum Load (0.7ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 524ms (View: 485, DB: 14) | 200 OK [http://0.0.0.0/albums]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:35:12) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mAlbum Load (0.7ms)[0m   [0mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 119ms (View: 91, DB: 4) | 200 OK [http://0.0.0.0/albums?page=2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:35:15) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mAlbum Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 120ms (View: 87, DB: 4) | 200 OK [http://0.0.0.0/albums/16]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:35:22) [GET]
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (38.1ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.6ms)
+Completed in 524ms (View: 333, DB: 40) | 200 OK [http://0.0.0.0/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:35:30) [GET]
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (32.2ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 115ms (View: 82, DB: 4) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:35:50) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"Bon Jovi", "name"=>"Apple", "date(1i)"=>"2005", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (9.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbum Create (0.7ms)[0m   [0mINSERT INTO `albums` (`name`, `artist`, `created_at`, `updated_at`, `date`) VALUES('Apple', 'Bon Jovi', '2010-01-26 09:35:50', '2010-01-26 09:35:50', '2005-01-26')[0m
+  [4;36;1mSQL (64.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/albums/17
+Completed in 127ms (DB: 76) | 302 Found [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:35:51) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mAlbum Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.1ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 17) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 106ms (View: 75, DB: 6) | 200 OK [http://127.0.0.1/albums/17]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:35:53) [GET]
+  [4;35;1mAlbum Load (0.9ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 387ms (View: 349, DB: 6) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:35:55) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mAlbum Load (0.8ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 156ms (View: 127, DB: 5) | 200 OK [http://127.0.0.1/albums?page=2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:35:58) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mAlbum Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 17) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.6ms)
+Completed in 128ms (View: 94, DB: 4) | 200 OK [http://127.0.0.1/albums/17]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:36:08) [GET]
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.6ms)
+Completed in 563ms (View: 533, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:36:11) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mAlbum Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 160ms (View: 130, DB: 4) | 200 OK [http://127.0.0.1/albums?page=2]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-01-26 12:37:17) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mAlbum Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (1.4ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Rendered albums/_form (50.2ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 146ms (View: 112, DB: 10) | 200 OK [http://127.0.0.1/albums/16/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:37:20) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 370ms (View: 333, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:37:22) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (0.6ms)
+Completed in 386ms (View: 168, DB: 3) | 200 OK [http://127.0.0.1/albums?page=2]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-01-26 12:37:24) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering albums/show
+Rendered albums/_sidebar (0.4ms)
+Completed in 113ms (View: 79, DB: 4) | 200 OK [http://127.0.0.1/albums/16]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:37:39) [GET]
+  [4;36;1mAlbum Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (34.5ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 125ms (View: 88, DB: 8) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:37:43) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 369ms (View: 335, DB: 5) | 200 OK [http://127.0.0.1/albums]
