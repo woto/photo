@@ -1,0 +1,2 @@
+module PaperFormatsHelper
+end

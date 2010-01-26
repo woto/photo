@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :printer_types
+
+  map.resources :paper_formats
+
+  map.resources :paper_types
+
+  map.resources :paper_types
+
   map.resources :albums
 
 

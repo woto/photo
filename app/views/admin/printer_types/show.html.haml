@@ -1,9 +1,20 @@
-%h3 Просмотр печатного устройства
-%p
-  %b Название печатного устройства:
-  = h @printer_type.name
-
-%p
-  = link_to 'Редактирование', edit_admin_printer_type_path(@printer_type)
-  |
-  = link_to 'К списку', admin_printer_types_path
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first
+        = link_to "#{t("web-app-theme.list", :default => "List")}", admin_printer_types_path
+      %li
+        = link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_printer_type_path
+      %li.active
+        = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_printer_type_path
+  .content
+    .inner
+      %p
+        %b
+          = t("activerecord.attributes.admin_printer_type.name", :default => t("activerecord.labels.name", :default => "Name"))
+          \:
+        = @printer_type.name
+      .wat-cf
+        = link_to "#{image_tag("web-app-theme/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}")} #{t("web-app-theme.edit", :default=> "Edit")}", edit_admin_printer_type_path(@printer_type), :class => "button"
+        = link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}")} #{t("web-app-theme.delete", :default => "Delete")}", admin_printer_type_path(@printer_type), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+- content_for :sidebar, render(:partial => 'sidebar')

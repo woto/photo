@@ -1,42 +1,41 @@
 .block
   .secondary-navigation
     %ul.wat-cf
-      %li.first.active= link_to "Список", admin_printer_types_path
-      %li= link_to "Новый", new_admin_printer_type_path
+      %li.first.active
+        = link_to "#{t("web-app-theme.list", :default => "List")}", admin_printer_types_path
+      %li
+        = link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_printer_type_path
   .content
-    %h2.title Список типов печатных устройств
+    %h2.title
+      = t("web-app-theme.all", :default => "All")
+      PrinterTypes
     .inner
-      %table
+      %table.table
         %tr
-          %th.first id
-          %th Название
-          %th.last &nbsp;
+          %th.first
+            ID
+          %th
+            = t("activerecord.attributes.admin_printer_type.name", :default => t("activerecord.labels.name", :default => "Name"))
+          %th
+            = t("web-app-theme.created_at", :default => "Created at")
+          %th.last
+            \&nbsp;
         - @printer_types.each do |printer_type|
-          %tr{:class => cycle("odd", "even")}
-            %td= printer_type.id
-            %td= link_to printer_type.name, [:admin, printer_type]
-            -#%td= printer_type.createad_at
-            %td.last
-              =link_to 'Просмотр', [:admin, printer_type]
-              |
-              =link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
-              |
-              =link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
-        -
+        %tr{ :class => cycle("odd", "even") }
+          %td
+            = printer_type.id
+          %td
+            = link_to printer_type.name, admin_printer_type_path(printer_type)
+          %td
+            = printer_type.created_at
+          %td.last
+            = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_printer_type_path(printer_type)
+            |
+            = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_printer_type_path(printer_type)
+            |
+            = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_printer_type_path(printer_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+        - end
       .actions-bar.wat-cf
         .actions
-        - will_paginate @printer_types
-            
--#%h3 Список печатных устройств
--#
--#%table
--#  %tr
--#    %td
--#    %tr
--#      %td= h printer_type.name
--#      %td= link_to 'Просмотр', [:admin, printer_type]
--#      %td= link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
--#      %td= link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
--#
--#
--#%p= link_to 'Создание', new_admin_printer_type_path
+        = will_paginate @printer_types
+- content_for :sidebar, render(:partial => 'sidebar')
