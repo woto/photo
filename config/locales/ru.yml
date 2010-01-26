@@ -9,4 +9,8 @@ ru:
     delete: Удаление
     confirm: Вы уверены?
     created_at: Дата создания
-    all: Все
+    all: Список
+    profile: Профиль
+    settings: Настройки
+    logout: Выход
+    
