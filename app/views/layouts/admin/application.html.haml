@@ -1,0 +1,47 @@
+!!! Strict
+%html{ :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+      My Cool Albums
+    = javascript_include_tag :defaults
+    = stylesheet_link_tag "web_app_theme", "web_app_theme_override", "themes/drastic-dark/style", "modalbox", :cache => true
+  %body
+    #container
+      #header
+        %h1
+          %a{ :href => "/" }
+            My Cool Albums
+        #user-navigation
+          %ul.wat-cf
+            %li
+              %a{ :href => "#" }
+                = t("web-app-theme.profile", :default => "Profile")
+            %li
+              %a{ :href => "#" }
+                = t("web-app-theme.settings", :default => "Settings")
+            %li
+              %a.logout{ :href => "/logout" }
+                = t("web-app-theme.logout", :default => "Logout")
+        #main-navigation
+          %ul.wat-cf
+            %li{ :class => controller.controller_path == 'albums' ? 'active' : '' }
+              %a{ :href => albums_path }
+                Albums
+      #wrapper.wat-cf
+        .flash
+          - flash.each do |type, message|
+            %div{ :class => "message #{type}" }
+              %p
+                = message
+          -
+        #main
+          = yield
+          #footer
+            .block
+              %p
+                Copyright &copy;
+                = Time.now.year
+                Фотолаборатория.
+        #sidebar
+          = yield :sidebar
