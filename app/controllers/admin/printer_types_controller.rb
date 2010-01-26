@@ -44,7 +44,7 @@ class Admin::PrinterTypesController < ApplicationController
 
     respond_to do |format|
       if @printer_type.save
-        flash[:notice] = 'Admin::PrinterType was successfully created.'
+        flash[:notice] = 'Печатное устройство было успешно создано'
         format.html { redirect_to([:admin, @printer_type]) }
         format.xml  { render :xml => @printer_type, :status => :created, :location => @printer_type }
       else
@@ -57,12 +57,12 @@ class Admin::PrinterTypesController < ApplicationController
   # PUT /admin_printer_types/1
   # PUT /admin_printer_types/1.xml
   def update
-    @printer_type = Admin::PrinterType.find(params[:id])
+    @printer_type = PrinterType.find(params[:id])
 
     respond_to do |format|
       if @printer_type.update_attributes(params[:printer_type])
-        flash[:notice] = 'Admin::PrinterType was successfully updated.'
-        format.html { redirect_to(@printer_type) }
+        flash[:notice] = 'Печатное устройство было успешно изменено'
+        format.html { redirect_to([:admin, @printer_type]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -74,9 +74,9 @@ class Admin::PrinterTypesController < ApplicationController
   # DELETE /admin_printer_types/1
   # DELETE /admin_printer_types/1.xml
   def destroy
-    @printer_type = Admin::PrinterType.find(params[:id])
+    @printer_type = PrinterType.find(params[:id])
     @printer_type.destroy
-
+    flash[:notice] = 'Печатное устройство было успешно удалено'
     respond_to do |format|
       format.html { redirect_to(admin_printer_types_url) }
       format.xml  { head :ok }

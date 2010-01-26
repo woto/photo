@@ -15,5 +15,5 @@ test:
   <<: *defaults
 
 production:
-  database: authlogic_example_production
+  database: photo_production
   <<: *defaults
