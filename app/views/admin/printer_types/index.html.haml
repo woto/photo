@@ -1,14 +1,42 @@
-%h3 Список печатных устройств
-
-%table
-  %tr
-    %td
-  - @printer_types.each do |printer_type|
-    %tr
-      %td= h printer_type.name
-      %td= link_to 'Просмотр', [:admin, printer_type]
-      %td= link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
-      %td= link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
-  -
-
-%p= link_to 'Создание', new_admin_printer_type_path
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first.active= link_to "Список", admin_printer_types_path
+      %li= link_to "Новый", new_admin_printer_type_path
+  .content
+    %h2.title Список типов печатных устройств
+    .inner
+      %table
+        %tr
+          %th.first id
+          %th Название
+          %th.last &nbsp;
+        - @printer_types.each do |printer_type|
+          %tr{:class => cycle("odd", "even")}
+            %td= printer_type.id
+            %td= link_to printer_type.name, [:admin, printer_type]
+            -#%td= printer_type.createad_at
+            %td.last
+              =link_to 'Просмотр', [:admin, printer_type]
+              |
+              =link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
+              |
+              =link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
+        -
+      .actions-bar.wat-cf
+        .actions
+        - will_paginate @printer_types
+            
+-#%h3 Список печатных устройств
+-#
+-#%table
+-#  %tr
+-#    %td
+-#    %tr
+-#      %td= h printer_type.name
+-#      %td= link_to 'Просмотр', [:admin, printer_type]
+-#      %td= link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
+-#      %td= link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
+-#
+-#
+-#%p= link_to 'Создание', new_admin_printer_type_path

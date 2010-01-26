@@ -19792,3 +19792,2174 @@ Rendering template within layouts/application
 Rendering albums/index
 Rendered albums/_sidebar (0.4ms)
 Completed in 369ms (View: 335, DB: 5) | 200 OK [http://127.0.0.1/albums]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:50:57) [GET]
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (36.4ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 305ms (View: 270, DB: 10) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:51:00) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (41.2ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 139ms (View: 92, DB: 7) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:51:03) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (10.3ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (39.9ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 152ms (View: 101, DB: 15) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (3.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:51:04) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (38.4ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 149ms (View: 101, DB: 11) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:51:06) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (236.6ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 334ms (View: 293, DB: 4) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:51:07) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (50.6ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 160ms (View: 109, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:52:15) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (46.1ms)
+Rendered albums/_sidebar (0.5ms)
+Completed in 148ms (View: 99, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:52:17) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (42.8ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 140ms (View: 92, DB: 4) | 200 OK [http://127.0.0.1/albums]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:52:52) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (43.6ms)
+Rendered albums/_sidebar (2.0ms)
+Completed in 296ms (View: 242, DB: 6) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:53:07) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 877ms (View: 837, DB: 5) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:53:11) [GET]
+  [4;36;1mAlbum Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (32.9ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 121ms (View: 84, DB: 7) | 200 OK [http://127.0.0.1/albums/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:53:13) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;35;1mAlbum Columns (6.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (36.5ms)
+Rendered albums/_sidebar (0.4ms)
+Completed in 134ms (View: 83, DB: 8) | 200 OK [http://127.0.0.1/albums]
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:53:15) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.5ms)
+Completed in 551ms (View: 517, DB: 8) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-01-26 12:53:17) [GET]
+  [4;35;1mAlbum Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (36.4ms)
+Rendered albums/_sidebar (0.6ms)
+Completed in 122ms (View: 88, DB: 4) | 200 OK [http://127.0.0.1/albums/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-01-26 12:53:19) [POST]
+  Parameters: {"authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI=", "album"=>{"artist"=>"", "name"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"26"}}
+  [4;36;1mAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering albums/new
+Rendered albums/_form (41.0ms)
+Rendered albums/_sidebar (0.7ms)
+Completed in 147ms (View: 106, DB: 3) | 200 OK [http://127.0.0.1/albums]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:53:22) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.3ms)
+Completed in 371ms (View: 336, DB: 4) | 200 OK [http://127.0.0.1/albums]
+** TabsOnRails: initialized properly
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:56:27) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (3.2ms)
+Completed in 473ms (View: 438, DB: 6) | 200 OK [http://127.0.0.1/albums?page=2]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:57:21) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 10, 10[0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mAlbum Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendered albums/_sidebar (2.4ms)
+Completed in 489ms (View: 456, DB: 5) | 200 OK [http://127.0.0.1/albums?page=2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 12:59:52) [GET]
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (0.4ms)
+Completed in 346ms (View: 313, DB: 6) | 200 OK [http://127.0.0.1/]
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 13:10:28) [GET]
+  [4;36;1mAlbum Load (9.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+Rendered albums/_sidebar (2.9ms)
+Completed in 907ms (View: 850, DB: 23) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:10:38) [GET]
+
+NameError (undefined local variable or method `application' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:2
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (176.4ms)
+Rendered rescues/_request_and_response (4.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:11:14) [GET]
+
+NameError (undefined local variable or method `application' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:2
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (176.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:11:16) [GET]
+
+NameError (undefined local variable or method `application' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:2
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (156.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:14:10) [GET]
+
+NameError (undefined local variable or method `application' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (266.6ms)
+Rendered rescues/_request_and_response (7.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:14:23) [GET]
+
+NameError (undefined local variable or method `application' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (254.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:14:30) [GET]
+
+NoMethodError (undefined method `application' for :admin:Symbol):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (411.4ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:14:47) [GET]
+
+NameError (undefined local variable or method `admin' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (255.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:14:52) [GET]
+
+NameError (undefined local variable or method `admin' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (251.8ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:17:51) [GET]
+
+NameError (undefined local variable or method `admin' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (261.5ms)
+Rendered rescues/_request_and_response (6.7ms)
+Rendering rescues/layout (internal_server_error)
+** TabsOnRails: initialized properly
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-26 13:18:11) [GET]
+
+NameError (undefined local variable or method `admin' for Admin::ApplicationController:Class):
+  app/controllers/admin/application_controller.rb:3
+  app/controllers/admin/printer_types_controller.rb:1
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (152.4ms)
+Rendered rescues/_request_and_response (6.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:18:22) [GET]
+  [4;36;1mPrinterType Load (0.5ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+
+ActionView::MissingTemplate (Missing layout layouts/admin::application.erb in view path app/views):
+  app/controllers/admin/printer_types_controller.rb:7:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+  app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (2.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:18:30) [GET]
+  [4;35;1mPrinterType Load (0.3ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 167ms (View: 136, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Admin::PrinterTypesController#new (for 127.0.0.1 at 2010-01-26 13:18:50) [GET]
+  [4;35;1mPrinterType Columns (7.8ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 119ms (View: 76, DB: 9) | 200 OK [http://127.0.0.1/admin/printer_types/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Admin::PrinterTypesController#create (for 127.0.0.1 at 2010-01-26 13:18:52) [POST]
+  Parameters: {"printer_type"=>{"name"=>""}, "commit"=>"Ок", "authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI="}
+  [4;36;1mPrinterType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPrinterType Load (0.7ms)[0m   [0;1mSELECT `printer_types`.id FROM `printer_types` WHERE (`printer_types`.`name` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 117ms (View: 64, DB: 5) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#create (for 127.0.0.1 at 2010-01-26 13:20:35) [POST]
+  Parameters: {"printer_type"=>{"name"=>""}, "commit"=>"Ок", "authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI="}
+  [4;36;1mPrinterType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT `printer_types`.id FROM `printer_types` WHERE (`printer_types`.`name` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 107ms (View: 65, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#create (for 127.0.0.1 at 2010-01-26 13:21:15) [POST]
+  Parameters: {"printer_type"=>{"name"=>""}, "commit"=>"Ок", "authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI="}
+  [4;36;1mPrinterType Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPrinterType Load (1.7ms)[0m   [0;1mSELECT `printer_types`.id FROM `printer_types` WHERE (`printer_types`.`name` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 143ms (View: 87, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#create (for 127.0.0.1 at 2010-01-26 13:21:19) [POST]
+  Parameters: {"printer_type"=>{"name"=>""}, "commit"=>"Ок", "authenticity_token"=>"PVgbUPK8xlTgSN/+udaZW06t6tQWsBixU0fUx/8wsJI="}
+  [4;36;1mPrinterType Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT `printer_types`.id FROM `printer_types` WHERE (`printer_types`.`name` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 157ms (View: 84, DB: 8) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:21:23) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 91ms (View: 57, DB: 6) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:21:45) [GET]
+  [4;36;1mPrinterType Load (0.6ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 180ms (View: 140, DB: 5) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:22:02) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 86ms (View: 57, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:23:46) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 109ms (View: 80, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (4.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:24:14) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 106ms (View: 77, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:24:22) [GET]
+  [4;36;1mPrinterType Load (1.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 138ms (View: 80, DB: 9) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:24:41) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 102ms (View: 75, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:27:12) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (6.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined local variable or method `admin_printer_types' for #<ActionView::Base:0xb6f042ac>) on line #4 of app/views/admin/printer_types/index.html.haml:
+1: .block
+2:   .secondary-navigation
+3:     %ul.wat-cf
+4:       %li.first.active= link_to "#{t("web-app-theme.list", :default => "List")}", admin_printer_types
+5: %h3 Список печатных устройств
+6: 
+7: %table
+
+    app/views/admin/printer_types/index.html.haml:4:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (209.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:27:39) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 140ms (View: 104, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:28:59) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined local variable or method `new_admin_printer_types_path' for #<ActionView::Base:0xb6efadc4>) on line #5 of app/views/admin/printer_types/index.html.haml:
+2:   .secondary-navigation
+3:     %ul.wat-cf
+4:       %li.first.active= link_to "#{t("web-app-theme.list", :default => "List")}", admin_printer_types_path
+5:       %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_printer_types_path
+6: %h3 Список печатных устройств
+7: 
+8: %table
+
+    app/views/admin/printer_types/index.html.haml:5:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (195.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:29:09) [GET]
+  [4;36;1mPrinterType Load (1.8ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined local variable or method `new_admin_printer_types' for #<ActionView::Base:0xb6ff1aac>) on line #5 of app/views/admin/printer_types/index.html.haml:
+2:   .secondary-navigation
+3:     %ul.wat-cf
+4:       %li.first.active= link_to "#{t("web-app-theme.list", :default => "List")}", admin_printer_types_path
+5:       %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_printer_types
+6: %h3 Список печатных устройств
+7: 
+8: %table
+
+    app/views/admin/printer_types/index.html.haml:5:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (197.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:29:15) [GET]
+  [4;36;1mPrinterType Load (2.7ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined local variable or method `new_admin_printer_type' for #<ActionView::Base:0xb6d61fd0>) on line #5 of app/views/admin/printer_types/index.html.haml:
+2:   .secondary-navigation
+3:     %ul.wat-cf
+4:       %li.first.active= link_to "#{t("web-app-theme.list", :default => "List")}", admin_printer_types_path
+5:       %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_printer_type
+6: %h3 Список печатных устройств
+7: 
+8: %table
+
+    app/views/admin/printer_types/index.html.haml:5:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (380.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:29:24) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (6.2ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 151ms (View: 110, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:31:43) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 179ms (View: 124, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#new (for 127.0.0.1 at 2010-01-26 13:31:47) [GET]
+  [4;36;1mPrinterType Columns (6.3ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 91ms (View: 52, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:31:50) [GET]
+  [4;35;1mPrinterType Load (0.4ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 94ms (View: 58, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:31:52) [GET]
+  [4;35;1mPrinterType Load (0.3ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 97ms (View: 63, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#new (for 127.0.0.1 at 2010-01-26 13:32:13) [GET]
+  [4;35;1mPrinterType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 93ms (View: 58, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:32:15) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 102ms (View: 62, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:32:18) [GET]
+  [4;36;1mPrinterType Load (0.9ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 96ms (View: 60, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#new (for 127.0.0.1 at 2010-01-26 13:32:20) [GET]
+  [4;36;1mPrinterType Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 84ms (View: 49, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types/new]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:32:22) [GET]
+  [4;35;1mPrinterType Load (1.4ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 93ms (View: 58, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (11.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:34:15) [GET]
+  [4;35;1mPrinterType Load (0.2ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 131ms (View: 90, DB: 13) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#new (for 127.0.0.1 at 2010-01-26 13:34:21) [GET]
+  [4;35;1mPrinterType Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 96ms (View: 62, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:34:24) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 102ms (View: 68, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:36:35) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 281ms (View: 246, DB: 6) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:37:37) [GET]
+  [4;36;1mPrinterType Load (0.5ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined local variable or method `Название' for #<ActionView::Base:0xb6f8be50>) on line #12 of app/views/admin/printer_types/index.html.haml:
+9:       %table
+10:         %tr
+11:           %th.first id
+12:           %th= Название
+13: 
+14: 
+15:             
+
+    app/views/admin/printer_types/index.html.haml:12:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (213.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:37:45) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (5.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 328ms (View: 291, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:38:07) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 150ms (View: 111, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:39:25) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+ERROR: compiling _run_haml_app47views47admin47printer_types47index46html46haml RAISED compile error
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:33: syntax error, unexpected kENSURE, expecting kEND
+...>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:36: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47admin47printer_types47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:format=>:xhtml, :attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"], :escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :encoding=>nil, :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+_hamlout.push_text("<div class='block'>\n  <div class='secondary-navigation'>\n    <ul class='wat-cf'>\n      <li class='first active'>#{_hamlout.adjust_tabs(4); haml_temp = link_to "Список", admin_printer_types_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</li>\n      <li>#{_hamlout.adjust_tabs(1); haml_temp = link_to "Новый", new_admin_printer_type_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</li>\n    </ul>\n  </div>\n  <div class='content'>\n", -1, false);
+
+
+
+
+
+
+
+
+_hamlout.push_text("    <h2 class='title'>Список типов печатных устройств</h2>\n    <div class='inner'>\n      <table>\n        <tr>\n          <th class='first'>id</th>\n          <th>Название</th>\n          <th>Дата создания</th>\n          <th class='last'>&nbsp;</th>\n        </tr>\n", 2, false); @printer_types.each do |printer_type|;
+;
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("      </table>\n    </div>\n  </div>\n</div>\n<h3>Список печатных устройств</h3>\n<table>\n  <tr>\n    <td></td>\n    <tr>\n      <td>#{haml_temp = h printer_type.name
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n      <td>#{_hamlout.adjust_tabs(1); haml_temp = link_to 'Просмотр', [:admin, printer_type]
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n      <td>#{_hamlout.adjust_tabs(1); haml_temp = link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n      <td>#{_hamlout.adjust_tabs(1); haml_temp = link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n", 0, false);
+
+_hamlout.push_text("    </tr>\n  </tr>\n</table>\n<p>#{_hamlout.adjust_tabs(-2); haml_temp = link_to 'Создание', new_admin_printer_type_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</p>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:36:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/woto/rails/photo/app/controllers/admin/printer_types_controller.rb:7:in `index'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/sass/plugin/rails.rb:19:in `process_without_compass'
+/var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/woto/rails/photo/app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:33: syntax error, unexpected kENSURE, expecting kEND
+...>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:36: syntax error, unexpected $end, expecting kEND) on line #33 of app/views/admin/printer_types/index.html.haml:
+30: 
+31: 
+32: %p= link_to 'Создание', new_admin_printer_type_path
+
+    app/views/admin/printer_types/index.html.haml:36:in `compile!'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (366.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:39:36) [GET]
+  [4;35;1mPrinterType Load (3.3ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+ERROR: compiling _run_haml_app47views47admin47printer_types47index46html46haml RAISED compile error
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:34: syntax error, unexpected kENSURE, expecting kEND
+...>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:37: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47admin47printer_types47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:format=>:xhtml, :attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"], :escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :encoding=>nil, :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+_hamlout.push_text("<div class='block'>\n  <div class='secondary-navigation'>\n    <ul class='wat-cf'>\n      <li class='first active'>#{_hamlout.adjust_tabs(4); haml_temp = link_to "Список", admin_printer_types_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</li>\n      <li>#{_hamlout.adjust_tabs(1); haml_temp = link_to "Новый", new_admin_printer_type_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</li>\n    </ul>\n  </div>\n  <div class='content'>\n", -1, false);
+
+
+
+
+
+
+
+
+_hamlout.push_text("    <h2 class='title'>Список типов печатных устройств</h2>\n    <div class='inner'>\n      <table>\n        <tr>\n          <th class='first'>id</th>\n          <th>Название</th>\n          <th>Дата создания</th>\n          <th class='last'>&nbsp;</th>\n        </tr>\n", 2, false); @printer_types.each do |printer_type|;
+
+;
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("      </table>\n    </div>\n  </div>\n</div>\n<h3>Список печатных устройств</h3>\n<table>\n  <tr>\n    <td></td>\n    <tr>\n      <td>#{haml_temp = h printer_type.name
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n      <td>#{_hamlout.adjust_tabs(1); haml_temp = link_to 'Просмотр', [:admin, printer_type]
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n      <td>#{_hamlout.adjust_tabs(1); haml_temp = link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n      <td>#{_hamlout.adjust_tabs(1); haml_temp = link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</td>\n", 0, false);
+
+_hamlout.push_text("    </tr>\n  </tr>\n</table>\n<p>#{_hamlout.adjust_tabs(-2); haml_temp = link_to 'Создание', new_admin_printer_type_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</p>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:37:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/woto/rails/photo/app/controllers/admin/printer_types_controller.rb:7:in `index'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/sass/plugin/rails.rb:19:in `process_without_compass'
+/var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/woto/rails/photo/app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:34: syntax error, unexpected kENSURE, expecting kEND
+...>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:37: syntax error, unexpected $end, expecting kEND) on line #34 of app/views/admin/printer_types/index.html.haml:
+31: 
+32: 
+33: %p= link_to 'Создание', new_admin_printer_type_path
+
+    app/views/admin/printer_types/index.html.haml:37:in `compile!'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (208.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:40:04) [GET]
+  [4;36;1mPrinterType Load (0.9ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+
+ActionView::TemplateError (Illegal element: classes and ids must have values.) on line #21 of app/views/admin/printer_types/index.html.haml:
+18: 
+19: 
+20:             
+21: #%h3 Список печатных устройств
+22: #
+23: #%table
+24: #  %tr
+
+    app/views/admin/printer_types/index.html.haml:21
+    haml (2.2.17) lib/haml/precompiler.rb:677:in `render_tag'
+    haml (2.2.17) lib/haml/precompiler.rb:805:in `render_div'
+    haml (2.2.17) lib/haml/precompiler.rb:212:in `process_line'
+    haml (2.2.17) lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.17) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (232.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 13:41:42) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+
+ActionView::TemplateError (Missing template albums/_sidebar.erb in view path app/views) on line #50 of app/views/albums/index.html.erb:
+47:   </div>
+48: </div>
+49: 
+50: <% content_for :sidebar, render(:partial => 'sidebar') -%>
+
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/albums/index.html.erb:50
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (359.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:41:59) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+ERROR: compiling _run_haml_app47views47admin47printer_types47index46html46haml RAISED compile error
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:33: syntax error, unexpected kENSURE, expecting kEND
+...\n", -4, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:36: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47admin47printer_types47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:format=>:xhtml, :attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"], :escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :encoding=>nil, :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+_hamlout.push_text("<div class='block'>\n  <div class='secondary-navigation'>\n    <ul class='wat-cf'>\n      <li class='first active'>#{_hamlout.adjust_tabs(4); haml_temp = link_to "Список", admin_printer_types_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</li>\n      <li>#{_hamlout.adjust_tabs(1); haml_temp = link_to "Новый", new_admin_printer_type_path
+_hamlout.format_script_false_true_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}</li>\n    </ul>\n  </div>\n  <div class='content'>\n", -1, false);
+
+
+
+
+
+
+
+
+_hamlout.push_text("    <h2 class='title'>Список типов печатных устройств</h2>\n    <div class='inner'>\n      <table>\n        <tr>\n          <th class='first'>id</th>\n          <th>Название</th>\n          <th>Дата создания</th>\n          <th class='last'>&nbsp;</th>\n        </tr>\n", 2, false); @printer_types.each do |printer_type|;
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("      </table>\n    </div>\n  </div>\n</div>\n", -4, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:36:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/woto/rails/photo/app/controllers/admin/printer_types_controller.rb:7:in `index'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/var/lib/gems/1.8/gems/haml-2.2.17/lib/sass/plugin/rails.rb:19:in `process_without_compass'
+/var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/woto/rails/photo/app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+/home/woto/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:33: syntax error, unexpected kENSURE, expecting kEND
+...\n", -4, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/woto/rails/photo/app/views/admin/printer_types/index.html.haml:36: syntax error, unexpected $end, expecting kEND) on line #33 of app/views/admin/printer_types/index.html.haml:
+30: -#      %td= link_to 'Удаление', [:admin, printer_type], :confirm => 'Вы уверены?', :method => :delete
+31: -#
+32: -#
+33: -#%p= link_to 'Создание', new_admin_printer_type_path
+
+    app/views/admin/printer_types/index.html.haml:36:in `compile!'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (192.3ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:42:27) [GET]
+  [4;35;1mPrinterType Load (0.3ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+Completed in 89ms (View: 61, DB: 1) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 13:44:09) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;35;1mAlbum Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+
+ActionView::TemplateError (Missing template albums/_sidebar.erb in view path app/views) on line #50 of app/views/albums/index.html.erb:
+47:   </div>
+48: </div>
+49: 
+50: <% content_for :sidebar, render(:partial => 'sidebar') -%>
+
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/albums/index.html.erb:50
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (207.0ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:44:17) [GET]
+  [4;35;1mPrinterType Load (0.4ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+
+ActionView::TemplateError (Invalid attribute list: "(:class => \#{cycle(\"odd\", \"even\")})".) on line #16 of app/views/admin/printer_types/index.html.haml:
+13:           %th Дата создания
+14:           %th.last &nbsp;
+15:         - @printer_types.each do |printer_type|
+16:           %tr(:class => #{cycle("odd", "even")})
+17:             
+18:         -
+19: 
+
+    app/views/admin/printer_types/index.html.haml:16
+    haml (2.2.17) lib/haml/precompiler.rb:614:in `parse_new_attributes'
+    haml (2.2.17) lib/haml/precompiler.rb:608:in `loop'
+    haml (2.2.17) lib/haml/precompiler.rb:608:in `parse_new_attributes'
+    haml (2.2.17) lib/haml/precompiler.rb:559:in `parse_tag'
+    haml (2.2.17) lib/haml/precompiler.rb:675:in `render_tag'
+    haml (2.2.17) lib/haml/precompiler.rb:213:in `process_line'
+    haml (2.2.17) lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.17) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (224.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:45:58) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+
+ActionView::TemplateError (Invalid attribute list: "(:class => cycle(\"odd\", \"even\"))".) on line #16 of app/views/admin/printer_types/index.html.haml:
+13:           %th Дата создания
+14:           %th.last &nbsp;
+15:         - @printer_types.each do |printer_type|
+16:           %tr(:class => cycle("odd", "even"))
+17:             
+18:         -
+19: 
+
+    app/views/admin/printer_types/index.html.haml:16
+    haml (2.2.17) lib/haml/precompiler.rb:614:in `parse_new_attributes'
+    haml (2.2.17) lib/haml/precompiler.rb:608:in `loop'
+    haml (2.2.17) lib/haml/precompiler.rb:608:in `parse_new_attributes'
+    haml (2.2.17) lib/haml/precompiler.rb:559:in `parse_tag'
+    haml (2.2.17) lib/haml/precompiler.rb:675:in `render_tag'
+    haml (2.2.17) lib/haml/precompiler.rb:213:in `process_line'
+    haml (2.2.17) lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.17) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (386.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:46:29) [GET]
+  [4;35;1mPrinterType Load (0.4ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+Completed in 91ms (View: 57, DB: 2) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:46:41) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+Completed in 94ms (View: 67, DB: 1) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:48:37) [GET]
+  [4;35;1mPrinterType Load (0.7ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 125ms (View: 89, DB: 5) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:51:08) [GET]
+  [4;35;1mPrinterType Load (0.4ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;36;1mPrinterType Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Completed in 128ms (View: 92, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#show (for 127.0.0.1 at 2010-01-26 13:51:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPrinterType Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mPrinterType Load (1.5ms)[0m   [0;1mSELECT * FROM `printer_types` WHERE (`printer_types`.`id` = 5) [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/show
+Completed in 103ms (View: 62, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types/5]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#show (for 127.0.0.1 at 2010-01-26 13:51:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPrinterType Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mPrinterType Load (1.5ms)[0m   [0;1mSELECT * FROM `printer_types` WHERE (`printer_types`.`id` = 7) [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/show
+Completed in 87ms (View: 42, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types/7]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:52:52) [GET]
+  [4;35;1mPrinterType Load (0.4ms)[0m   [0mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+
+ActionView::TemplateError (There's no Ruby code for = to evaluate.) on line #20 of app/views/admin/printer_types/index.html.haml:
+17:             %td= printer_type.id
+18:             %td= link_to printer_type.name, [:admin, printer_type]
+19:             %td= printer_type.createad_at
+20:             %td.last= 
+21:             link_to 'Просмотр', [:admin, printer_type]
+22:             |
+23:             link_to 'Редактирование', edit_admin_printer_type_path(printer_type)
+
+    app/views/admin/printer_types/index.html.haml:20
+    haml (2.2.17) lib/haml/precompiler.rb:741:in `render_tag'
+    haml (2.2.17) lib/haml/precompiler.rb:213:in `process_line'
+    haml (2.2.17) lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.17) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.17) rails/./lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (376.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:53:37) [GET]
+  [4;36;1mPrinterType Load (1.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined method `createad_at' for #<PrinterType:0xb6f73e40>) on line #19 of app/views/admin/printer_types/index.html.haml:
+16:           %tr{:class => cycle("odd", "even")}
+17:             %td= printer_type.id
+18:             %td= link_to printer_type.name, [:admin, printer_type]
+19:             %td= printer_type.createad_at
+20:             %td.last
+21:             =link_to 'Просмотр', [:admin, printer_type]
+22:             |
+
+    app/views/admin/printer_types/index.html.haml:19:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    app/views/admin/printer_types/index.html.haml:15:in `each'
+    app/views/admin/printer_types/index.html.haml:15:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (202.9ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:53:40) [GET]
+  [4;36;1mPrinterType Load (0.9ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined method `createad_at' for #<PrinterType:0xb6cfd6e8>) on line #19 of app/views/admin/printer_types/index.html.haml:
+16:           %tr{:class => cycle("odd", "even")}
+17:             %td= printer_type.id
+18:             %td= link_to printer_type.name, [:admin, printer_type]
+19:             %td= printer_type.createad_at
+20:             %td.last
+21:             =link_to 'Просмотр', [:admin, printer_type]
+22:             |
+
+    app/views/admin/printer_types/index.html.haml:19:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    app/views/admin/printer_types/index.html.haml:15:in `each'
+    app/views/admin/printer_types/index.html.haml:15:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (381.4ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:54:27) [GET]
+  [4;36;1mPrinterType Load (1.2ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 141ms (View: 106, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:55:19) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 132ms (View: 99, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:55:26) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 156ms (View: 119, DB: 6) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:55:45) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 175ms (View: 116, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:57:47) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` [0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+
+ActionView::TemplateError (undefined method `total_pages' for #<Array:0xb6df6658>) on line #28 of app/views/admin/printer_types/index.html.haml:
+25:         -
+26:     .actions-bar.wat-cf
+27:       .actions
+28:       - will_paginate @printer_types
+29:             
+30: -#%h3 Список печатных устройств
+31: -#
+
+    /home/woto/.gem/ruby/1.8/gems/will_paginate-2.3.11/lib/will_paginate/view_helpers.rb:197:in `total_pages_for_collection'
+    /home/woto/.gem/ruby/1.8/gems/will_paginate-2.3.11/lib/will_paginate/view_helpers.rb:98:in `will_paginate'
+    app/views/admin/printer_types/index.html.haml:28:in `_run_haml_app47views47admin47printer_types47index46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/admin/printer_types_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (230.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:58:56) [GET]
+  [4;36;1mPrinterType Load (0.7ms)[0m   [0;1mSELECT * FROM `printer_types` LIMIT 0, 10[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 106ms (View: 68, DB: 7) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 13:59:07) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` LIMIT 0, 10[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 98ms (View: 63, DB: 5) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 14:04:47) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` LIMIT 0, 10[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 168ms (View: 128, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 14:04:52) [GET]
+  [4;36;1mPrinterType Load (0.4ms)[0m   [0;1mSELECT * FROM `printer_types` LIMIT 0, 10[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 140ms (View: 103, DB: 4) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#index (for 127.0.0.1 at 2010-01-26 14:05:19) [GET]
+  [4;36;1mPrinterType Load (0.3ms)[0m   [0;1mSELECT * FROM `printer_types` LIMIT 0, 10[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/index
+  [4;35;1mPrinterType Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+Completed in 88ms (View: 61, DB: 6) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#new (for 127.0.0.1 at 2010-01-26 14:07:17) [GET]
+  [4;36;1mPrinterType Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `printer_types`[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 75ms (View: 48, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PrinterTypesController#create (for 127.0.0.1 at 2010-01-26 14:07:20) [POST]
+  Parameters: {"printer_type"=>{"name"=>""}, "commit"=>"Ок", "authenticity_token"=>"EvOF4OGuJi7+aKny6ZAQaLQVLS7nq/HBHmgpj3aWBLA="}
+  [4;35;1mPrinterType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `printer_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrinterType Load (0.2ms)[0m   [0mSELECT `printer_types`.id FROM `printer_types` WHERE (`printer_types`.`name` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/admin/application
+Rendering admin/printer_types/new
+Completed in 103ms (View: 59, DB: 3) | 200 OK [http://127.0.0.1/admin/printer_types]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-01-26 14:53:19) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM `albums` LIMIT 0, 10[0m
+  [4;36;1mAlbum Columns (23.1ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `albums` [0m
+Rendering template within layouts/application
+Rendering albums/index
+
+ActionView::TemplateError (Missing template albums/_sidebar.erb in view path app/views) on line #50 of app/views/albums/index.html.erb:
+47:   </div>
+48: </div>
+49: 
+50: <% content_for :sidebar, render(:partial => 'sidebar') -%>
+
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/albums/index.html.erb:50
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/albums_controller.rb:7:in `index'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+    /var/lib/gems/1.8/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+    app/middleware/flash_session_cookie_middleware.rb:14:in `call'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (352.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)

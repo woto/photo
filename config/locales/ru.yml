@@ -1,0 +1,12 @@
+en_us:
+  web-app-theme: 
+    save: Save
+    cancel: Cancel
+    list: List
+    edit: Edit
+    new: New
+    show: Show
+    delete: Delete
+    confirm: Вы уверены?
+    created_at: Created at
+    all: All

@@ -1,8 +1,8 @@
-class Admin::PrinterTypesController < ApplicationController
+class Admin::PrinterTypesController < Admin::ApplicationController
   # GET /admin_printer_types
   # GET /admin_printer_types.xml
   def index
-    @printer_types = PrinterType.all
+    @printer_types = PrinterType.paginate(:per_page => 10, :page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
