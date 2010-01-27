@@ -13,4 +13,18 @@ ru:
     profile: Профиль
     settings: Настройки
     logout: Выход
+  activerecord:
+    labels:
+      name: Название
+      width: Ширина
+      height: Высота
+    attributes:
+      paper_type:
+        name: Название
+      paper_format:
+        width: Ширина
+        height: Длина
+      printer_type:
+        name: Название
+
     

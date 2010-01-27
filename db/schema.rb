@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100126090853) do
+ActiveRecord::Schema.define(:version => 20100126210207) do
 
   create_table "admin_printer_types", :force => true do |t|
     t.datetime "created_at"
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(:version => 20100126090853) do
   create_table "paper_formats", :force => true do |t|
     t.float    "width"
     t.float    "height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paper_prices", :force => true do |t|
+    t.float    "price"
+    t.integer  "paper_format_id"
+    t.integer  "paper_type_id"
+    t.integer  "printer_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

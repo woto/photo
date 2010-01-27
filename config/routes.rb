@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :paper_prices
+
   map.resources :printer_types
 
   map.resources :paper_formats

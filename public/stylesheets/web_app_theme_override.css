@@ -1,1 +1,5 @@
-/* Override here any style definide by web-app-theme */
+#errorExplanation {
+  margin: 10px;
+  padding: 10px;
+  background: #999;
+}

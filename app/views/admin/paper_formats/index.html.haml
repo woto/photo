@@ -31,7 +31,7 @@
             %td
               = link_to paper_format.height, admin_paper_format_path(paper_format)
             %td
-              = paper_format.created_at
+              = Russian::strftime paper_format.created_at
             %td.last
               = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_format_path(paper_format)
               |

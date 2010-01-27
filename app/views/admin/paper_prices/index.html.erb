@@ -1,0 +1,20 @@
+<h1>Listing paper_prices</h1>
+
+<table>
+  <tr>
+    <th>Price</th>
+  </tr>
+
+<% @paper_prices.each do |paper_price| %>
+  <tr>
+    <td><%=h paper_price.price %></td>
+    <td><%= link_to 'Show', paper_price %></td>
+    <td><%= link_to 'Edit', edit_paper_price_path(paper_price) %></td>
+    <td><%= link_to 'Destroy', paper_price, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New paper_price', new_paper_price_path %>

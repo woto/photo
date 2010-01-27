@@ -1,0 +1,16 @@
+<h1>Editing paper_price</h1>
+
+<% form_for(@paper_price) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @paper_price %> |
+<%= link_to 'Back', paper_prices_path %>
