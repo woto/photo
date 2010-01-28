@@ -24,10 +24,9 @@
               %a.logout{ :href => "/logout" }
                 = t("web-app-theme.logout", :default => "Logout")
         #main-navigation
-          %ul.wat-cf
-            %li{ :class => controller.controller_path == 'admin/paper_prices' ? 'active' : '' }
-              %a{ :href => admin_paper_prices_path }
-                Бумага
+          - tabs_tag(:builder => MenuTabBuilder) do |tab|
+            = tab.papers 'Бумага', admin_paper_prices_path
+          -
       #wrapper.wat-cf
         .flash
           - flash.each do |type, message|

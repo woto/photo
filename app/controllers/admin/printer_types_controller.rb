@@ -1,5 +1,6 @@
 class Admin::PrinterTypesController < Admin::ApplicationController
-  set_tab :printer_types
+  set_tab :printer_types, :sidebar
+  set_tab :papers
 
   # GET /admin_printer_types
   # GET /admin_printer_types.xml

@@ -1,5 +1,6 @@
 class Admin::PaperFormatsController < Admin::ApplicationController
-  set_tab :paper_formats
+  set_tab :paper_formats, :sidebar
+  set_tab :papers
 
   # GET /paper_formats
   # GET /paper_formats.xml

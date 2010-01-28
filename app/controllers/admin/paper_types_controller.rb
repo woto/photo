@@ -1,5 +1,6 @@
 class Admin::PaperTypesController < Admin::ApplicationController
-  set_tab :paper_types
+  set_tab :paper_types, :sidebar
+  set_tab :papers
 
   # GET /paper_types
   # GET /paper_types.xml

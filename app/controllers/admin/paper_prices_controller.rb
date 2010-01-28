@@ -1,5 +1,6 @@
 class Admin::PaperPricesController < Admin::ApplicationController
-  set_tab :paper_prices
+  set_tab :paper_prices, :sidebar
+  set_tab :papers
 
   # GET /paper_prices
   # GET /paper_prices.xml
