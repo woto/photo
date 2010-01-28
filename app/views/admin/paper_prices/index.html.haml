@@ -17,6 +17,12 @@
           %th
             = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
           %th
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+          %th
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+          %th
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+          %th
             = t("web-app-theme.created_at", :default => "Created at")
           %th.last
             \&nbsp;
@@ -25,7 +31,13 @@
             %td
               = paper_price.id
             %td
-              = link_to paper_price.price, admin_paper_price_path(paper_price)
+              = link_to (number_to_currency(paper_price.price), admin_paper_price_path(paper_price))
+            %td
+              = link_to (paper_price.paper_format, admin_paper_price_path(paper_price))
+            %td
+              = link_to (number_to_currency(paper_price.price), admin_paper_price_path(paper_price))
+            %td
+              = link_to (number_to_currency(paper_price.price), admin_paper_price_path(paper_price))
             %td
               = paper_price.created_at
             %td.last
