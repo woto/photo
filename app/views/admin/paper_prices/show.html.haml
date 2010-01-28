@@ -1,0 +1,35 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first
+        = link_to "#{t("web-app-theme.list", :default => "List")}", admin_paper_prices_path
+      %li
+        = link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_paper_price_path
+      %li.active
+        = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_price_path
+  .content
+    .inner
+      %p
+        %b
+          = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+          \:
+        = @paper_price.price
+      %p
+        %b
+          = t("activerecord.attributes.admin_paper_price.paper_format_id", :default => t("activerecord.labels.paper_format_id", :default => "Paper format"))
+          \:
+        = @paper_price.paper_format_id
+      %p
+        %b
+          = t("activerecord.attributes.admin_paper_price.paper_type_id", :default => t("activerecord.labels.paper_type_id", :default => "Paper type"))
+          \:
+        = @paper_price.paper_type_id
+      %p
+        %b
+          = t("activerecord.attributes.admin_paper_price.printer_type_id", :default => t("activerecord.labels.printer_type_id", :default => "Printer type"))
+          \:
+        = @paper_price.printer_type_id
+      .wat-cf
+        = link_to "#{image_tag("web-app-theme/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}")} #{t("web-app-theme.edit", :default=> "Edit")}", edit_admin_paper_price_path(@paper_price), :class => "button"
+        = link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}")} #{t("web-app-theme.delete", :default => "Delete")}", admin_paper_price_path(@paper_price), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+- content_for :sidebar, render(:partial => 'sidebar')

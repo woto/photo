@@ -1,5 +1,5 @@
 .group
-  = f.error_messages
+  = error_message_on @paper_format, :base 
   = f.label :width, t("activerecord.attributes.paper_format.width", :default => "Width"), :class => :label
   = f.text_field :width, :class => 'text_field'
   %span.description

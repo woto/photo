@@ -1,16 +1,17 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :paper_prices
-
-  map.resources :printer_types
-
-  map.resources :paper_formats
-
-  map.resources :paper_types
-
-  map.resources :paper_types
-
-  map.resources :albums
-
+  #map.resources :paper_prices
+  #
+  #map.resources :printer_types
+  #
+  #map.resources :paper_formats
+  #
+  #map.resources :paper_types
+  #
+  #map.resources :paper_types
+  #
+  #map.resources :albums
+  #
+  #
 
   map.root :controller => :albums
   map.resources :albums
@@ -18,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :printer_types
     admin.resources :paper_types
     admin.resources :paper_formats
+    admin.resources :paper_prices
   end
   
   # The priority is based upon order of creation: first created -> highest priority.

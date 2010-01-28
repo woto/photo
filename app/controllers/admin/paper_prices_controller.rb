@@ -1,9 +1,11 @@
-class PaperPricesController < ApplicationController
+class Admin::PaperPricesController < Admin::ApplicationController
+  set_tab :paper_prices
+
   # GET /paper_prices
   # GET /paper_prices.xml
   def index
-    @paper_prices = PaperPrice.all
-
+    @paper_prices = PaperPrice.paginate(:per_page => 10, :page => params[:page])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @paper_prices }
@@ -45,7 +47,7 @@ class PaperPricesController < ApplicationController
     respond_to do |format|
       if @paper_price.save
         flash[:notice] = 'PaperPrice was successfully created.'
-        format.html { redirect_to(@paper_price) }
+        format.html { redirect_to([:admin, @paper_price]) }
         format.xml  { render :xml => @paper_price, :status => :created, :location => @paper_price }
       else
         format.html { render :action => "new" }
@@ -62,7 +64,7 @@ class PaperPricesController < ApplicationController
     respond_to do |format|
       if @paper_price.update_attributes(params[:paper_price])
         flash[:notice] = 'PaperPrice was successfully updated.'
-        format.html { redirect_to(@paper_price) }
+        format.html { redirect_to([:admin, @paper_price]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,7 +80,7 @@ class PaperPricesController < ApplicationController
     @paper_price.destroy
 
     respond_to do |format|
-      format.html { redirect_to(paper_prices_url) }
+      format.html { redirect_to(admin_paper_prices_url) }
       format.xml  { head :ok }
     end
   end

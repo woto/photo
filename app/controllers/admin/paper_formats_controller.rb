@@ -1,4 +1,6 @@
 class Admin::PaperFormatsController < Admin::ApplicationController
+  set_tab :paper_formats
+
   # GET /paper_formats
   # GET /paper_formats.xml
   def index

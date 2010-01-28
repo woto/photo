@@ -1,5 +1,21 @@
-#errorExplanation {
-  margin: 10px;
-  padding: 10px;
-  background: #999;
+.formError {
+  border: 1px solid #fbb;
+  background-color: #fdd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align:center;
+  margin: 0 auto 15px;
+  padding: 8px;
+}
+
+.navigation li span
+{
+  display: block;
+  padding: 10px 15px;
+}
+
+#footer a
+{
+  color: white;
+  text-decoration: none;
 }

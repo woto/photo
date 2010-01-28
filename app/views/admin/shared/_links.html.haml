@@ -1,0 +1,20 @@
+.block
+  %h3
+    Ссылки раздела
+  - tabs_tag :open_tabs => {:class => "navigation"} do |tab|
+    = tab.paper_types  "Типы бумаг", admin_paper_types_path
+    = tab.paper_formats 'Форматы', admin_paper_formats_path
+    = tab.printer_types   'Типы печатных устройств', admin_printer_types_path
+    = tab.paper_prices "Цены на бумагу", admin_paper_prices_path
+  -
+
+-#    Ссылки раздела
+-#  %ul.navigation
+-#    %li
+-#      %a{ :href => "#" }
+-#        Link 1
+-#    %li
+-#      %a{ :href => "#" }
+-#        Link 2
+
+

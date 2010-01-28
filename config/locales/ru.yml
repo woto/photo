@@ -1,18 +1,29 @@
 ru:
-  web-app-theme:
-    save: Сохранение
+  site:
+    new: 
+      a: Создание
+      b: Создать
+    delelete:
+      a: Удаление
+      b: Удалить
+    save:
+      a: Сохранение
+      b: Сохранить
     cancel: Отмена
     list: Список
-    edit: Редактирование
-    new: Создание
-    show: Просмотр
-    delete: Удаление
-    confirm: Вы уверены?
     created_at: Дата создания
-    all: Список
-    profile: Профиль
-    settings: Настройки
-    logout: Выход
+    title: Фотолаборатория
+    author:
+      nickname: woto
+      email: oganer@gmail.com
+    paper_list:
+      genitive:
+        one: типа бумаги
+        many: типов бумаги
+    printer_list:
+      genitive:
+        one: типа печатных устройств
+        many: типов печатных устройств
   activerecord:
     labels:
       name: Название
