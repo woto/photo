@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100126210207) do
+ActiveRecord::Schema.define(:version => 20100129024814) do
 
   create_table "admin_printer_types", :force => true do |t|
     t.datetime "created_at"
@@ -62,28 +62,10 @@ ActiveRecord::Schema.define(:version => 20100126210207) do
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
-  create_table "test1s", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "test2s", :force => true do |t|
-    t.string   "name"
-    t.integer  "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "test3s", :force => true do |t|
-    t.float    "width"
-    t.float    "height"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "test4s", :force => true do |t|
-    t.string   "name"
+  create_table "tasks", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "archived"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

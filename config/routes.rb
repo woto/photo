@@ -20,6 +20,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :paper_types
     admin.resources :paper_formats
     admin.resources :paper_prices
+    admin.resources :tasks
   end
   
   # The priority is based upon order of creation: first created -> highest priority.
