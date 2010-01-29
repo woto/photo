@@ -1,0 +1,45 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+	    <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", admin_tasks_path  %></li>
+  		<li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_task_path %></li>
+    </ul>
+  </div>          
+  <div class="content">          
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Tasks</h2>
+    <div class="inner">
+
+ <%= grid(@tasks_grid) do |g|
+
+     g.column :column_name => 'ID', :attribute_name => 'id' do |task|
+           task.id
+               end
+
+                   g.column :column_name => 'Title', :attribute_name => 'title'  do |task|
+                         task.title
+                             end
+
+                                 g.column  :column_name => 'Description', :attribute_name => 'description' do |task|
+                                       task.description
+                                           end
+
+                                               g.column  :column_name => 'Archived', :attribute_name => 'archived' do |task|
+                                                     task.archived? ? 'Yes' : 'No'
+                                                         end
+
+                                                             g.column   do |task|
+                                                                   link_to('Edit', edit_admin_task_path(task))
+                                                                       end
+                                                                         end -%>
+
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>
