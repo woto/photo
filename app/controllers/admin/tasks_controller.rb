@@ -4,7 +4,13 @@ class Admin::TasksController < Admin::ApplicationController
   def index
     #@admin_tasks = Admin::Task.all
 
-    @tasks_grid = initialize_grid(Task)
+    @tasks_grid = initialize_grid(PaperPrice, 
+      :include => [:paper_format, :paper_type, :printer_type],
+      :custom_order => {
+        'paper_prices.paper_type_id' => 'paper_types.name'
+ #       'paper_prices.paper_format_id' => 'paper_formats.width'
+      }
+    )
 
 
     respond_to do |format|

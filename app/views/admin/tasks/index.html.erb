@@ -11,26 +11,35 @@
 
  <%= grid(@tasks_grid) do |g|
 
-     g.column :column_name => 'ID', :attribute_name => 'id' do |task|
-           task.id
-               end
+  g.column :column_name => 'ID', :attribute_name => 'id' do |task|
+    task.id
+  end
 
-                   g.column :column_name => 'Title', :attribute_name => 'title'  do |task|
-                         task.title
-                             end
+  g.column :column_name => 'Price', :attribute_name => 'price'  do |task|
+    task.price
+  end
 
-                                 g.column  :column_name => 'Description', :attribute_name => 'description' do |task|
-                                       task.description
-                                           end
+  g.column  :column_name => 'Paper Width', :attribute_name => 'width', :model_class => 'PaperFormat' do |task|
+    task.paper_format.width
+  end
 
-                                               g.column  :column_name => 'Archived', :attribute_name => 'archived' do |task|
-                                                     task.archived? ? 'Yes' : 'No'
-                                                         end
+  g.column :column_name => 'Paper Height', :attribute_name => 'height', :model_class => 'PaperFormat' do |task|
+    task.paper_format.height
+  end
 
-                                                             g.column   do |task|
-                                                                   link_to('Edit', edit_admin_task_path(task))
-                                                                       end
-                                                                         end -%>
+  g.column  :column_name => 'Printer Type', :attribute_name => 'name', :model_class => 'PrinterType', :custom_filter => PrinterType.to_dropdown  do |task|
+    task.printer_type.name
+  end
+
+  g.column :column_name => 'Paper Type', :attribute_name => 'paper_type_id', :custom_filter => PaperType.to_dropdown do |task|
+    task.paper_type.name
+  end
+
+ g.column   do |task|
+    link_to('Edit', edit_admin_task_path(task))
+ end
+
+end -%>
 
       <div class="actions-bar wat-cf">
         <div class="actions">

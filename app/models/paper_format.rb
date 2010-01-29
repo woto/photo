@@ -10,6 +10,8 @@ class PaperFormat < ActiveRecord::Base
   #def swap_width_and_height
   #  self[:width], self[:height] = self[:height], self[:width] if self[:width].to_i > self[:height].to_i
   #end
+  
+  include ToDropdownMixin
 
   protected
 
