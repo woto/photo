@@ -7,8 +7,8 @@ class Admin::TasksController < Admin::ApplicationController
     @tasks_grid = initialize_grid(PaperPrice, 
       :include => [:paper_format, :paper_type, :printer_type],
       :custom_order => {
-        'paper_prices.paper_type_id' => 'paper_types.name'
- #       'paper_prices.paper_format_id' => 'paper_formats.width'
+        'paper_prices.paper_type_id' => 'paper_types.name',
+        'paper_prices.printer_type_id' => 'printer_types.name'
       }
     )
 

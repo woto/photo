@@ -27,7 +27,7 @@
     task.paper_format.height
   end
 
-  g.column  :column_name => 'Printer Type', :attribute_name => 'name', :model_class => 'PrinterType', :custom_filter => PrinterType.to_dropdown  do |task|
+  g.column :column_name => 'Printer Type', :attribute_name => 'printer_type_id', :custom_filter => PrinterType.to_dropdown  do |task|
     task.printer_type.name
   end
 
