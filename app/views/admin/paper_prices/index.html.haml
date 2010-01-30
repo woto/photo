@@ -7,7 +7,7 @@
         = link_to t("web-app-theme.new"), new_admin_paper_price_path
   .content
     %h2.title
-      = t("web-app-theme.all", :default => "All")
+      = t("web-app-theme.all")
       PaperPrices
     .inner
 
@@ -33,15 +33,15 @@
           %th.first
             ID
           %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
           %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
           %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
           %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
           %th
-            = t("web-app-theme.created_at", :default => "Created at")
+            = t("web-app-theme.created_at")
           %th.last
             \&nbsp;
         - @paper_prices.each do |paper_price|

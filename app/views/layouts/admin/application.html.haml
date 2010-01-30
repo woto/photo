@@ -18,13 +18,13 @@
           %ul.wat-cf
             %li
               %a{ :href => "#" }
-                = t("web-app-theme.profile", :default => "Profile")
+                = t("web-app-theme.profile")
             %li
               %a{ :href => "#" }
-                = t("web-app-theme.settings", :default => "Settings")
+                = t("web-app-theme.settings")
             %li
               %a.logout{ :href => "/logout" }
-                = t("web-app-theme.logout", :default => "Logout")
+                = t("web-app-theme.logout")
         #main-navigation
           - tabs_tag(:builder => MenuTabBuilder) do |tab|
             = tab.papers 'Бумага', admin_paper_prices_path

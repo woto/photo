@@ -7,7 +7,7 @@
         = link_to t("web-app-theme.new"), new_admin_printer_type_path
   .content
     %h2.title
-      = t("web-app-theme.new", :default => "New")
+      = t("web-app-theme.new")
       PrinterType
     .inner
       - form_for :printer_type, :url => admin_printer_types_path, :html => { :class => :form } do |f|

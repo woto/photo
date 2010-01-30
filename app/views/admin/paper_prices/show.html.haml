@@ -11,25 +11,25 @@
     .inner
       %p
         %b
-          = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price", :default => "Price"))
+          = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
           \:
         = @paper_price.price
       %p
         %b
-          = t("activerecord.attributes.admin_paper_price.paper_format_id", :default => t("activerecord.labels.paper_format_id", :default => "Paper format"))
+          = t("activerecord.attributes.admin_paper_price.paper_format_id", :default => t("activerecord.labels.paper_format_id"))
           \:
         = @paper_price.paper_format_id
       %p
         %b
-          = t("activerecord.attributes.admin_paper_price.paper_type_id", :default => t("activerecord.labels.paper_type_id", :default => "Paper type"))
+          = t("activerecord.attributes.admin_paper_price.paper_type_id", :default => t("activerecord.labels.paper_type_id"))
           \:
         = @paper_price.paper_type_id
       %p
         %b
-          = t("activerecord.attributes.admin_paper_price.printer_type_id", :default => t("activerecord.labels.printer_type_id", :default => "Printer type"))
+          = t("activerecord.attributes.admin_paper_price.printer_type_id", :default => t("activerecord.labels.printer_type_id"))
           \:
         = @paper_price.printer_type_id
       .wat-cf
         = link_to "#{image_tag("web-app-theme/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}")} #{t("web-app-theme.edit", :default=> "Edit")}", edit_admin_paper_price_path(@paper_price), :class => "button"
-        = link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}")} #{t("web-app-theme.delete", :default => "Delete")}", admin_paper_price_path(@paper_price), :method => "delete", :class => "button", :confirm => t("web-app-theme.confirm")
+        = link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}")} #{t("web-app-theme.delete")}", admin_paper_price_path(@paper_price), :method => "delete", :class => "button", :confirm => t("web-app-theme.confirm")
 - content_for :sidebar, render(:partial => 'sidebar')

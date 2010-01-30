@@ -7,7 +7,7 @@
         = link_to t("web-app-theme.new"), new_admin_paper_price_path
   .content
     %h2.title
-      = t("web-app-theme.new", :default => "New")
+      = t("web-app-theme.new")
       PaperPrice
     .inner
       - semantic_form_for @paper_price, :url => admin_paper_prices_path do |form|

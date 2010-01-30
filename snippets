@@ -3,3 +3,8 @@ html2haml index.html.erb > index.html.haml && rm index.html.erb && html2haml edi
 
 Поиск и замена в сгененированных шаблонах
 find ./ -type f -exec sed -i '/#.*{.*}/s/"#{\(t("[^"]\+"\), :default => "[^"]\+")}"/\1)/g' {} \;
+
+find ./ -type f -exec sed -i 's/\(t("[^"]\+"\), :default => "[^"]\+"\()\)/\1\2/g' {} \;
+
+
+

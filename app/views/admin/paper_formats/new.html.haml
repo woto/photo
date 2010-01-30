@@ -7,7 +7,7 @@
         = link_to t("web-app-theme.new"), new_admin_paper_format_path
   .content
     %h2.title
-      = t("web-app-theme.new", :default => "New")
+      = t("web-app-theme.new")
       PaperFormat
     .inner
       - form_for :paper_format, :url => admin_paper_formats_path, :html => { :class => :form } do |f|
