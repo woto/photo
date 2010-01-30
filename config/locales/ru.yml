@@ -1,49 +1,62 @@
 ru:
-  site:
-    new: 
-      a: Создание
-      b: Создать
-    delelete:
-      a: Удаление
-      b: Удалить
-    save:
-      a: Сохранение
-      b: Сохранить
-    cancel: Отмена
+  web-app-theme:
     list: Список
+    new: Создание
+    show: Просмотр
+    edit: Редактирование
+    delete: Удаление
+    save: Созранение
+    cancel: Отмена
     created_at: Дата создания
+    profile: Профиль
+    settings: Настройки
+    logout: Выход
+    confirm: Вы 
+  site:
+#    new: 
+#      a: Создание
+#      b: Создать
+#    delelete:
+#      a: Удаление
+#      b: Удалить
+#    save:
+#      a: Сохранение
+#      b: Сохранить
+#    cancel: Отмена
+#    list: Список
+#    created_at: Дата создания
     title: Фотолаборатория
     author:
       nickname: woto
       email: oganer@gmail.com
     paper_price:
       nominative:
-        one: цена на бумагу
-        many: цены на бумагу
+        one: Цена на бумагу
+        many: Цены на бумагу
       genitive:
-        one: цены на бумагу
-        many: цен на бумагу
+        one: Цены на бумагу
+        many: Цен на бумагу
     paper_format: 
       nominative: 
-        one: формат бумаги
-        many: форматы бумаги
+        one: Формат бумаги
+        many: Форматы бумаги
       genitive:
-        one: формата бумаги
-        many: форматов бумаги
+        one: Формата бумаги
+        many: Форматов бумаги
     paper_type:
       nominative:
-        one: тип бумаги
-        many: типы бумаги
+        one: Тип бумаги
+        many: Типы бумаги
       genitive:
-        one: типа бумаги
-        many: типов бумаги
-    printer_list:
+        one: Типа бумаги
+        many: Типов бумаги
+    printer_type:
       nominative:
-        one: тип печатного устройства
-        many: типы печатных устройств
+        one: Тип печатного устройства
+        many: Типы печатных устройств
       genitive:
-        one: типа печатных устройств
-        many: типов печатных устройств
+        one: Типа печатного устройства
+        many: Типов печатных устройств
   activerecord:
     labels:
       name: Название
@@ -54,8 +67,6 @@ ru:
         name: Название
       paper_format:
         width: Ширина
-        height: Длина
+        height: Высота
       printer_type:
         name: Название
-
-    

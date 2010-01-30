@@ -7,8 +7,7 @@
         = link_to t("web-app-theme.new"), new_admin_paper_price_path
   .content
     %h2.title
-      = t("web-app-theme.all")
-      PaperPrices
+      = t 'site.paper_price.nominative.many'
     .inner
 
       = grid(@tasks_grid) do |g|
@@ -24,47 +23,13 @@
           - task.printer_type.name 
         - g.column :column_name => 'Paper Type', :attribute_name => 'paper_type_id', :custom_filter => PaperType.to_dropdown do |task| 
           - task.paper_type.name
-        - g.column   do |task| 
-          - link_to('Edit', edit_admin_task_path(task))
+        - g.column   do |task|
+          - link_to t("web-app-theme.show"), admin_paper_price_path(task)
+        - g.column   do |task|
+          - link_to t("web-app-theme.edit"), edit_admin_paper_price_path(task)
+        - g.column   do |task|
+          - link_to t("web-app-theme.delete"), admin_paper_price_path(task), :method => :delete, :confirm => t("web-app-theme.confirm")
 
-
-      %table.table
-        %tr
-          %th.first
-            ID
-          %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
-          %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
-          %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
-          %th
-            = t("activerecord.attributes.admin_paper_price.price", :default => t("activerecord.labels.price"))
-          %th
-            = t("web-app-theme.created_at")
-          %th.last
-            \&nbsp;
-        - @paper_prices.each do |paper_price|
-          %tr{ :class => cycle("odd", "even") }
-            %td
-              = paper_price.id
-            %td
-              = link_to (number_to_currency(paper_price.price), admin_paper_price_path(paper_price))
-            %td
-              = link_to (paper_price.paper_format, admin_paper_price_path(paper_price))
-            %td
-              = link_to (number_to_currency(paper_price.price), admin_paper_price_path(paper_price))
-            %td
-              = link_to (number_to_currency(paper_price.price), admin_paper_price_path(paper_price))
-            %td
-              = paper_price.created_at
-            %td.last
-              = link_to t("web-app-theme.show"), admin_paper_price_path(paper_price)
-              |
-              = link_to t("web-app-theme.edit"), edit_admin_paper_price_path(paper_price)
-              |
-              = link_to t("web-app-theme.delete"), admin_paper_price_path(paper_price), :method => :delete, :confirm => t("web-app-theme.confirm")
-        -
       .actions-bar.wat-cf
         .actions
 - content_for :sidebar, render(:partial => 'sidebar')

@@ -7,15 +7,14 @@
         = link_to t("web-app-theme.new"), new_admin_paper_type_path
   .content
     %h2.title
-      = t("web-app-theme.all")
-      PaperTypes
+      = t 'site.paper_type.nominative.many'
     .inner
       %table.table
         %tr
           %th.first
             ID
           %th
-            = t("activerecord.attributes.admin_paper_type.name", :default => t("activerecord.labels.name"))
+            = t("activerecord.labels.name")
           %th
             = t("web-app-theme.created_at")
           %th.last

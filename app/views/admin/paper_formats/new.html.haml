@@ -8,7 +8,7 @@
   .content
     %h2.title
       = t("web-app-theme.new")
-      PaperFormat
+      = t("site.paper_format.genitive.one")
     .inner
       - form_for :paper_format, :url => admin_paper_formats_path, :html => { :class => :form } do |f|
         = render :partial => "form", :locals => {:f => f}

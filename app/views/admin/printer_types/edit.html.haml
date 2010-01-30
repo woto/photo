@@ -10,7 +10,7 @@
   .content
     %h2.title
       = t("web-app-theme.edit")
-      PrinterType
+      = t("site.printer_type.genitive.one")
     .inner
       - form_for @printer_type, :url => admin_printer_type_path(@printer_type), :html => { :class => :form } do |f|
         = render :partial => "form", :locals => {:f => f}

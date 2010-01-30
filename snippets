@@ -6,5 +6,4 @@ find ./ -type f -exec sed -i '/#.*{.*}/s/"#{\(t("[^"]\+"\), :default => "[^"]\+"
 
 find ./ -type f -exec sed -i 's/\(t("[^"]\+"\), :default => "[^"]\+"\()\)/\1\2/g' {} \;
 
-
-
+find ./ -type f -exec sed -i 's/t("[^"]\+", :default => \(t(".*\?")\).*\?)/\1/g' {} \;

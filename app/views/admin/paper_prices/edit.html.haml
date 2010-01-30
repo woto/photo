@@ -10,7 +10,7 @@
   .content
     %h2.title
       = t("web-app-theme.edit")
-      PaperPrice
+      = t("site.paper_price.genitive.one")
     .inner
       - form_for @paper_price, :url => admin_paper_price_path(@paper_price), :html => { :class => :form } do |f|
         = render :partial => "form", :locals => {:f => f}

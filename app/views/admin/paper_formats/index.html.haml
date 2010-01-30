@@ -7,17 +7,16 @@
         = link_to t("web-app-theme.new"), new_admin_paper_format_path
   .content
     %h2.title
-      = t("web-app-theme.all")
-      PaperFormats
+      = t 'site.paper_format.nominative.many'
     .inner
       %table.table
         %tr
           %th.first
             ID
           %th
-            = t("activerecord.attributes.admin_paper_format.width", :default => t("activerecord.labels.width"))
+            = t("activerecord.labels.width")
           %th
-            = t("activerecord.attributes.admin_paper_format.height", :default => t("activerecord.labels.height"))
+            = t("activerecord.labels.height")
           %th
             = t("web-app-theme.created_at")
           %th.last
