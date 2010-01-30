@@ -5,6 +5,15 @@ class Admin::PaperPricesController < Admin::ApplicationController
   # GET /paper_prices
   # GET /paper_prices.xml
   def index
+
+    @tasks_grid = initialize_grid(PaperPrice,
+      :include => [:paper_format, :paper_type, :printer_type],
+      :custom_order => {
+        'paper_prices.paper_type_id' => 'paper_types.name',
+        'paper_prices.printer_type_id' => 'printer_types.name'
+      }
+    )
+
     @paper_prices = PaperPrice.paginate(:per_page => 10, :page => params[:page])
     
     respond_to do |format|

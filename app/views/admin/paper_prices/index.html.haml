@@ -10,6 +10,24 @@
       = t("web-app-theme.all", :default => "All")
       PaperPrices
     .inner
+
+      = grid(@tasks_grid) do |g|
+        - g.column :column_name => 'ID', :attribute_name => 'id' do |task|
+          - task.id
+        - g.column :column_name => 'Price', :attribute_name => 'price' do |task|
+          - task.price
+        - g.column  :column_name => 'Paper Width', :attribute_name => 'width', :model_class => 'PaperFormat' do |task|
+          - task.paper_format.width
+        - g.column :column_name => 'Paper Height', :attribute_name => 'height', :model_class => 'PaperFormat' do |task|
+          - task.paper_format.height
+        - g.column :column_name => 'Printer Type', :attribute_name => 'printer_type_id', :custom_filter => PrinterType.to_dropdown  do |task| 
+          - task.printer_type.name 
+        - g.column :column_name => 'Paper Type', :attribute_name => 'paper_type_id', :custom_filter => PaperType.to_dropdown do |task| 
+          - task.paper_type.name
+        - g.column   do |task| 
+          - link_to('Edit', edit_admin_task_path(task))
+
+
       %table.table
         %tr
           %th.first
