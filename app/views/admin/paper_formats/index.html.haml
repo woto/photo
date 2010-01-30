@@ -2,9 +2,9 @@
   .secondary-navigation
     %ul.wat-cf
       %li.first.active
-        = link_to "#{t("web-app-theme.list", :default => "List")}", admin_paper_formats_path
+        = link_to t("web-app-theme.list"), admin_paper_formats_path
       %li
-        = link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_paper_format_path
+        = link_to t("web-app-theme.new"), new_admin_paper_format_path
   .content
     %h2.title
       = t("web-app-theme.all", :default => "All")
@@ -33,11 +33,11 @@
             %td
               = Russian::strftime paper_format.created_at
             %td.last
-              = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_paper_format_path(paper_format)
+              = link_to t("web-app-theme.show"), admin_paper_format_path(paper_format)
               |
-              = link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_paper_format_path(paper_format)
+              = link_to t("web-app-theme.edit"), edit_admin_paper_format_path(paper_format)
               |
-              = link_to "#{t("web-app-theme.delete", :default => "Delete")}", admin_paper_format_path(paper_format), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+              = link_to t("web-app-theme.delete"), admin_paper_format_path(paper_format), :method => :delete, :confirm => t("web-app-theme.confirm")
         -
       .actions-bar.wat-cf
         .actions

@@ -2,9 +2,9 @@
   .secondary-navigation
     %ul.wat-cf
       %li.first
-        = link_to "#{t("web-app-theme.list", :default => "List")}", admin_paper_formats_path
+        = link_to t("web-app-theme.list"), admin_paper_formats_path
       %li.active
-        = link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_paper_format_path
+        = link_to t("web-app-theme.new"), new_admin_paper_format_path
   .content
     %h2.title
       = t("web-app-theme.new", :default => "New")

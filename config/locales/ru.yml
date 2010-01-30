@@ -16,11 +16,31 @@ ru:
     author:
       nickname: woto
       email: oganer@gmail.com
-    paper_list:
+    paper_price:
+      nominative:
+        one: цена на бумагу
+        many: цены на бумагу
+      genitive:
+        one: цены на бумагу
+        many: цен на бумагу
+    paper_format: 
+      nominative: 
+        one: формат бумаги
+        many: форматы бумаги
+      genitive:
+        one: формата бумаги
+        many: форматов бумаги
+    paper_type:
+      nominative:
+        one: тип бумаги
+        many: типы бумаги
       genitive:
         one: типа бумаги
         many: типов бумаги
     printer_list:
+      nominative:
+        one: тип печатного устройства
+        many: типы печатных устройств
       genitive:
         one: типа печатных устройств
         many: типов печатных устройств

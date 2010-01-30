@@ -5,6 +5,6 @@
     Ex: a simple text
 .group.navform.wat-cf
   %button.button{ :type => "submit" }
-    = image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")
+    = image_tag("web-app-theme/tick.png", :alt => t("web-app-theme.save"))
     = t("web-app-theme.save", :default => "Save")
-  = link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.cancel", :default => "Cancel")}")} #{t("web-app-theme.cancel", :default => "Cancel")}", admin_printer_types_path, :class => "button"
+  = link_to "#{image_tag("web-app-theme/cross.png", :alt => t("web-app-theme.cancel"))} #{t("web-app-theme.cancel", :default => "Cancel")}", admin_printer_types_path, :class => "button"

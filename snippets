@@ -1,1 +1,5 @@
 html2haml index.html.erb > index.html.haml && rm index.html.erb && html2haml edit.html.erb > edit.html.haml && rm edit.html.erb && html2haml show.html.erb > show.html.haml && rm show.html.erb && html2haml new.html.erb > new.html.haml && rm new.html.erb && html2haml _form.html.erb > _form.html.haml && rm _form.html.erb && html2haml _sidebar.html.erb > _sidebar.html.haml && rm _sidebar.html.erb
+
+
+Поиск и замена в сгененированных шаблонах
+find ./ -type f -exec sed -i '/#.*{.*}/s/"#{\(t("[^"]\+"\), :default => "[^"]\+")}"/\1)/g' {} \;
