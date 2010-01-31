@@ -5,13 +5,13 @@ ru:
     show: Просмотр
     edit: Редактирование
     delete: Удаление
-    save: Созранение
+    save:  Созданение
     cancel: Отмена
     created_at: Дата создания
     profile: Профиль
     settings: Настройки
     logout: Выход
-    confirm: Вы 
+    confirm: Вы уверены, что хотите удалить?
   site:
 #    new: 
 #      a: Создание

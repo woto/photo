@@ -8,7 +8,7 @@
   .content
     %h2.title
       = t("web-app-theme.new")
-      PaperPrice
+      = t "site.paper_price.genitive.one"
     .inner
       - semantic_form_for @paper_price, :url => admin_paper_prices_path do |form|
         = form.inputs
