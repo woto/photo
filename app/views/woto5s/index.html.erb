@@ -1,0 +1,18 @@
+<h1>Listing woto5s</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <tr>
+    <td><%=h @woto5.name %></td>
+    <td><%= link_to 'Show', woto5_path %></td>
+    <td><%= link_to 'Edit', edit_woto5_path %></td>
+    <td><%= link_to 'Destroy', @woto5, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+</table>
+
+<br />
+
+<%= link_to 'New woto5', new_woto5_path %>

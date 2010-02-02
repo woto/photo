@@ -1,26 +1,23 @@
 ActionController::Routing::Routes.draw do |map|
-  #map.resources :paper_prices
-  #
-  #map.resources :printer_types
-  #
-  #map.resources :paper_formats
-  #
-  #map.resources :paper_types
-  #
-  #map.resources :paper_types
-  #
-  #map.resources :albums
-  #
-  #
 
-  map.root :controller => :albums
-  map.resources :albums
+  map.signup 'signup', :controller => 'users', :action => 'new'
+  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
+  map.login 'login', :controller => 'user_sessions', :action => 'new'
+
+  map.resources :user_verifications
+
+  map.resource :user_session
+  map.resources :users
+
+  map.resource :woto5
+
+  map.root :controller => 'woto5s'
+
   map.namespace :admin do |admin|
     admin.resources :printer_types
     admin.resources :paper_types
     admin.resources :paper_formats
     admin.resources :paper_prices
-    admin.resources :tasks
   end
   
   # The priority is based upon order of creation: first created -> highest priority.

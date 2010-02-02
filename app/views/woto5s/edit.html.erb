@@ -1,0 +1,16 @@
+<h1>Editing woto5</h1>
+
+<% form_for(@woto5, :url => woto5_path) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @woto5 %> |
+<%= link_to 'Back', woto5_path %>

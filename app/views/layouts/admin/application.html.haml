@@ -4,11 +4,10 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
     %title
       = t("site.title")
-    = stylesheet_link_tag "formtastic", "formtastic_changes", "web_app_theme", "web_app_theme_override", "themes/drastic-dark/style", "modalbox", :cache => true
-    = javascript_include_tag :defaults, "modalbox", :cache => true
-    = include_wice_grid_assets
+    = stylesheet_link_tag *(["formtastic", "formtastic_changes", "web_app_theme", "web_app_theme_override", "themes/drastic-dark/style", "modalbox"] + names_of_wice_grid_stylesheets + [{:cache => true}])
+    = javascript_include_tag *([:defaults, "modalbox"] + names_of_wice_grid_javascripts + [{:cache => true}])
 
-  %body
+    %body
     #container
       #header
         %h1

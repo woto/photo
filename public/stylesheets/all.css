@@ -1,0 +1,1321 @@
+/* -------------------------------------------------------------------------------------------------
+
+It's *strongly* suggested that you don't modify this file.  Instead, load a new stylesheet after
+this one in your layouts (eg formtastic_changes.css) and override the styles to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+This stylesheet forms part of the Formtastic Rails Plugin
+(c) 2008 Justin French
+
+--------------------------------------------------------------------------------------------------*/
+
+
+/* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just form.formtastic
+--------------------------------------------------------------------------------------------------*/
+form.formtastic, form.formtastic ul, form.formtastic ol, form.formtastic li, form.formtastic fieldset, form.formtastic legend, form.formtastic input, form.formtastic textarea, form.formtastic select, form.formtastic p { margin:0; padding:0; }
+form.formtastic fieldset { border:0; }
+form.formtastic em, form.formtastic strong { font-style:normal; font-weight:normal; }
+form.formtastic ol, form.formtastic ul { list-style:none; }
+form.formtastic abbr, form.formtastic acronym { border:0; font-variant:normal; }
+form.formtastic input, form.formtastic textarea, form.formtastic select { font-family:inherit; font-size:inherit; font-weight:inherit; }
+form.formtastic input, form.formtastic textarea, form.formtastic select { font-size:100%; }
+form.formtastic legend { color:#000; }
+
+
+/* FIELDSETS & LISTS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset { }
+form.formtastic fieldset.inputs { }
+form.formtastic fieldset.buttons { padding-left:25%; }
+form.formtastic fieldset ol { }
+form.formtastic fieldset.buttons li { float:left; padding-right:0.5em; }
+
+/* clearfixing the fieldsets */
+form.formtastic fieldset { display: inline-block; }
+form.formtastic fieldset:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+html[xmlns] form.formtastic fieldset { display: block; }
+* html form.formtastic fieldset { height: 1%; }
+
+
+/* INPUT LIs
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li { margin-bottom:1.5em; }
+
+/* clearfixing the li's */
+form.formtastic fieldset ol li { display: inline-block; }
+form.formtastic fieldset ol li:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+html[xmlns] form.formtastic fieldset ol li { display: block; }
+* html form.formtastic fieldset ol li { height: 1%; }
+
+form.formtastic fieldset ol li.required { }
+form.formtastic fieldset ol li.optional { }
+form.formtastic fieldset ol li.error { }
+  
+
+/* LABELS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li label { display:block; width:25%; float:left; padding-top:.2em; }
+form.formtastic fieldset ol li li label { line-height:100%; padding-top:0; }
+form.formtastic fieldset ol li li label input { line-height:100%; vertical-align:middle; margin-top:-0.1em;}
+
+
+/* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li fieldset { position:relative; }
+form.formtastic fieldset ol li fieldset legend { position:absolute; width:25%; padding-top:0.1em; }
+form.formtastic fieldset ol li fieldset legend span { position:absolute; }
+form.formtastic fieldset ol li fieldset legend.label label { position:absolute; }
+form.formtastic fieldset ol li fieldset ol { float:left; width:74%; margin:0; padding:0 0 0 25%; }
+form.formtastic fieldset ol li fieldset ol li { padding:0; border:0; }
+
+
+/* INLINE HINTS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li p.inline-hints { color:#666; margin:0.5em 0 0 25%; }
+
+
+/* INLINE ERRORS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li p.inline-errors { color:#cc0000; margin:0.5em 0 0 25%; }
+form.formtastic fieldset ol li ul.errors { color:#cc0000; margin:0.5em 0 0 25%; list-style:square; }
+form.formtastic fieldset ol li ul.errors li { padding:0; border:none; display:list-item; }
+
+
+/* STRING & NUMERIC OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.string input { width:74%; }
+form.formtastic fieldset ol li.password input { width:74%; }
+form.formtastic fieldset ol li.numeric input { width:74%; }
+
+
+/* TEXTAREA OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.text textarea { width:74%; }
+
+
+/* HIDDEN OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.hidden { display:none; }
+
+
+/* BOOLEAN OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.boolean label { padding-left:25%; width:auto; }
+form.formtastic fieldset ol li.boolean label input { margin:0 0.5em 0 0.2em; }
+
+
+/* RADIO OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.radio { }
+form.formtastic fieldset ol li.radio fieldset ol { margin-bottom:-0.6em; }
+form.formtastic fieldset ol li.radio fieldset ol li { margin:0.1em 0 0.5em 0; }
+form.formtastic fieldset ol li.radio fieldset ol li label { float:none; width:100%; }
+form.formtastic fieldset ol li.radio fieldset ol li label input { margin-right:0.2em; }
+
+
+/* CHECK BOXES (COLLECTION) OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.check_boxes { }
+form.formtastic fieldset ol li.check_boxes fieldset ol { margin-bottom:-0.6em; }
+form.formtastic fieldset ol li.check_boxes fieldset ol li { margin:0.1em 0 0.5em 0; }
+form.formtastic fieldset ol li.check_boxes fieldset ol li label { float:none; width:100%; }
+form.formtastic fieldset ol li.check_boxes fieldset ol li label input { margin-right:0.2em; }
+
+
+
+/* DATE & TIME OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.date fieldset ol li,
+form.formtastic fieldset ol li.time fieldset ol li,
+form.formtastic fieldset ol li.datetime fieldset ol li { float:left; width:auto; margin:0 .3em 0 0; }
+
+form.formtastic fieldset ol li.date fieldset ol li label,
+form.formtastic fieldset ol li.time fieldset ol li label,
+form.formtastic fieldset ol li.datetime fieldset ol li label { display:none; }
+
+form.formtastic fieldset ol li.date fieldset ol li label input, 
+form.formtastic fieldset ol li.time fieldset ol li label input, 
+form.formtastic fieldset ol li.datetime fieldset ol li label input { display:inline; margin:0; padding:0;  }
+
+
+/* -------------------------------------------------------------------------------------------------
+
+Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+For example, to make the inline hint paragraphs a little darker in color than the standard #666:
+
+form.formtastic fieldset ol li p.inline-hints { color:#333; }
+
+--------------------------------------------------------------------------------------------------*/
+
+
+* {margin:0;padding:0}
+.clear { clear: both; height: 0; }
+
+.wat-cf:after {
+     content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+}
+
+.wat-cf {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .wat-cf {height: 1%;}
+.wat-cf {display: block;}
+/* End hide from IE-mac */
+
+h1 { margin: 15px 0; font-size: 22px; font-weight: normal; }
+h2 { font-size: 22px; margin: 15px 0; font-weight: normal;}
+h3 { font-size: 18px; margin: 10px 0; font-weight: normal;}
+h4 { font-size: 16px; margin: 10px 0; font-weight: normal;}
+hr {height: 1px; border: 0; }
+p { margin: 15px 0;}
+a img { border: none; }
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;  
+}
+
+#container {
+  min-width: 960px;
+}
+
+#header, #wrapper {
+  padding: 0 20px;
+}
+
+#header {
+  position: relative;
+  padding-top: 1px;  
+}
+
+#header h1 {
+  margin: 0;
+  padding: 10px 0;  
+  font-size: 26px;
+}
+
+#header h1 a:link, #header h1 a:active, #header h1 a:hover, #header h1 a:visited {
+  text-decoration: none;
+}
+
+#main {  
+  width: 70%;
+  float: left;    
+}
+
+.actions-bar {
+  padding: 10px 1px;
+}
+
+.actions-bar .actions {
+  float: left;
+}
+
+
+.actions-bar .pagination {
+  float: right;
+  padding: 1px 0;
+}
+
+#sidebar {
+  width: 25%;
+  float: right;      
+}
+
+#sidebar h3 {  
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 13px;
+}
+
+#sidebar .block {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#sidebar .block .content {
+  padding: 0 15px;
+}
+
+#sidebar ul.navigation li a:link, #sidebar ul.navigation li a:visited {
+  display: block;
+  padding: 10px 15px;
+}
+
+#sidebar .block .sidebar-block, #sidebar .notice {
+  padding:10px;
+}
+
+#wrapper {
+  padding-top: 20px;
+}
+
+#main .block {
+  margin-bottom: 20px;
+  padding-top: 1px;
+}
+
+#main .block .content .inner {
+  padding: 0 15px 15px;  
+}
+
+#main .main p.first {
+  margin-top: 0;
+}
+
+#user-navigation {
+  position: absolute;
+  top: 0px;
+  right: 20px;  
+}
+
+#main-navigation {
+  width: 100%;
+}
+
+#user-navigation ul, #main-navigation ul, .secondary-navigation ul, #sidebar ul.navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#user-navigation ul li, #main-navigation ul li, .secondary-navigation ul li {
+  float: left;  
+}
+
+#main-navigation ul li {
+  margin-right: 5px;
+}
+
+#user-navigation ul li {
+  padding: 5px 10px;
+}
+
+#main-navigation ul li a:link, #main-navigation ul li a:visited, #main-navigation ul li a:hover, #main-navigation ul li a:active,
+.secondary-navigation ul li a:link, .secondary-navigation ul li a:visited, .secondary-navigation ul li a:hover, .secondary-navigation ul li a:active,
+#user-navigation ul li a:link, #user-navigation ul li a:visited, #user-navigation ul li a:hover, #user-navigation ul li a:active {
+  text-decoration: none;
+}
+
+#main-navigation ul li a {
+  font-size: 14px;
+  line-height: 14px;
+  display: block;
+  padding: 8px 15px;
+}
+
+.secondary-navigation {
+  font-size: 13px;  
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+}
+
+.secondary-navigation ul li a {
+  display: block;
+  padding: 10px 15px;  
+}
+
+#footer {
+  padding-bottom: 20px;
+}
+
+/* pagination */
+
+.pagination a, .pagination span {
+  padding: 2px 5px;
+  margin-right: 5px; 
+  display: block;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.pagination span.current {
+  font-weight: bold;  
+}
+
+.pagination a {
+  text-decoration: none;  
+}
+
+/* tables */
+.table {
+  width: 100%;
+  border-collapse: collapse;  
+  margin-bottom: 15px;
+}
+
+.table th {
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table th.first {
+  width: 30px;
+}
+
+.table th.last {
+  width: 200px;  
+}
+
+.table .checkbox {
+  margin-left: 10px;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.table td.last {
+  text-align: right;
+}
+
+/* forms */
+
+input.checkbox {
+  margin: 0;
+  padding: 0;
+}
+
+.form .group {
+  margin-bottom: 15px;
+}
+
+.form div.left {
+  width: 20%;
+  float: left;
+}
+
+.form div.right {
+  width: 75%;
+  float: right;
+}
+
+.form .columns .column {
+  width: 48%;
+}
+
+.form .columns .left {
+  float: left;
+}
+
+.form .columns .right {
+  float: right;
+}
+
+.form label.label, .form input.text_field, .form textarea.text_area {
+  font-size: 1.2em;
+  padding: 1px 0;
+  margin: 0;
+}
+
+.form label.right {
+  text-align: right;
+}
+
+.form input.checkbox, .form input.radio {
+  margin-right: 5px;
+}
+
+.form label.checkbox, .form label.radio {
+  line-height: 1.5em;
+}
+
+.form label.label {
+  display: block;
+  padding-bottom: 2px;  
+  font-weight: bold;
+}
+
+.form div.fieldWithErrors label.label {
+  display: inline;
+}
+
+.form .fieldWithErrors .error {
+  color: red;
+}
+
+.form input.text_field, .form textarea.text_area {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* lists */
+
+ul.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.list li {
+  clear: left;
+  padding-bottom: 5px;
+}
+
+ul.list li .left {
+  float: left;  
+}
+
+ul.list li .left .avatar {
+  width: 50px;
+  height: 50px;
+}
+
+ul.list li .item {
+  margin-left: 80px;
+}
+
+ul.list li .item .avatar {
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 30px;
+  height: 30px;
+}
+
+/* box */
+
+#box {
+  width: 500px;
+  margin: 50px auto;  
+}
+
+#box .block {
+  margin-bottom: 20px;
+}
+
+#box .block h2 {
+  padding: 10px 15px;
+  margin: 0;  
+}
+
+#box .block .content {
+  padding: 10px 20px;
+}
+
+/*  Inspired by http://particletree.com/features/rediscovering-the-button-element */
+
+a.button:link, a.button:visited, a.button:hover, a.button:active, button.button {
+  color: #222;
+  display:block;
+  float:left;
+  margin:0 7px 0 0;
+  background-color: #eee;
+  border:1px solid #bfbfbf;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight:bold;
+  cursor:pointer;
+  padding:5px 10px 6px 7px;
+  text-decoration: none;
+}
+
+button.button {
+  width:auto;
+  overflow:visible;
+  padding:4px 10px 3px 7px; /* IE6 */
+}
+button.button[type] {
+  padding:5px 10px 5px 7px; /* Firefox */
+  line-height:17px; /* Safari */
+}
+
+*:first-child+html button.button[type] {
+  padding:4px 10px 3px 7px; /* IE7 */
+}
+
+button.button img, a.button img {
+  margin:0 3px -3px 0 !important;
+  padding:0;
+  border:none;
+  width:16px;
+  height:16px;
+}
+
+button.button:hover, a.button:hover {
+  background-color:#dedede;
+}
+
+button.button:active, a.button:active {
+  background-color:#e5e5e5;
+}
+
+.formError {
+  border: 1px solid #fbb;
+  background-color: #fdd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align:center;
+  margin: 0 auto 15px;
+  padding: 8px;
+}
+
+.navigation li span
+{
+  display: block;
+  padding: 10px 15px;
+  background: #f0f0ee
+}
+
+#footer a
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+/*
+
+    Drastic Dark
+    by Juan Maria Martinez Arce
+       juan[at]insignia4u.com
+
+    light grey:                 #cfcfcf
+    medium grey:                #36393d
+    dark grey:                  #1a1a1a
+    interactive action yellow   #ffff88
+    red                         #cc0000
+    light blue                  #E6EEFC
+    dark blue                   #0B43A8
+
+*/
+
+.small {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.4em;
+}
+
+.gray {
+  color:#999999;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.6em;
+}
+
+.hightlight {
+  background-color: #ffff88;
+  font-weight: bold;
+  color: #36393d;
+}
+
+a:link, a:visited, a:hover, a:active, h1, h2, h3 { color: #36393d; }
+a { -moz-outline: none; }
+
+body {
+  color: #222;
+  background: #cfcfcf;
+  font-family: helvetica, arial, sans-serif;
+}
+
+hr {
+  background: #f0f0ee;
+  color: #f0f0ee;
+}
+
+#header {
+  background: #36393d;
+}
+
+#header h1 {
+  padding: 15px 0;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+}
+
+#header h1 a:link, #header h1 a:active, #header h1 a:hover, #header h1 a:visited {
+  color: #FFF;
+}
+
+#user-navigation {
+  top: auto;
+  bottom: 5px;
+  right: 25px;
+}
+
+#user-navigation a.logout {
+  background: #cc0000;
+  padding: 1px 4px;
+  -moz-border-radius: 4px;
+	-webkit-border-radius: 3px;
+}
+
+#main .block .content {
+  background: #FFF;
+  padding-top: 1px;
+}
+
+#main .block .content h2 {
+  margin-left: 15px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+}
+
+#main .block .content p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.45em;
+}
+
+#sidebar .block {
+  background: #FFF;
+}
+
+#sidebar .block h4 {
+  font-weight: bold;
+}
+
+#sidebar .notice {
+  background: #E6EEFC;
+}
+
+#sidebar .notice h4 {
+  color: #0B43A8;
+}
+
+#sidebar h3 {
+  background: #36393d;
+  color: #FFF;
+  border-bottom: 5px solid #1a1a1a;
+}
+
+#main-navigation ul li {
+  padding-left: 15px;
+}
+
+#main-navigation ul li a {
+  padding: 8px 0;
+}
+
+#main-navigation ul li.active {
+  padding: 0;
+  margin-left: 15px;
+}
+
+#main-navigation ul li.active {
+  margin-left: 15px;
+}
+
+#main-navigation ul li.active a {
+  padding: 8px 15px;
+}
+
+#sidebar ul li a:link, #sidebar ul li a:visited {
+  background: #FFF;
+  border-bottom: 1px solid #F0F0EE;
+  text-decoration: none;
+}
+
+#sidebar ul li a:hover, #sidebar ul li a:active {
+  background: #666666;
+  color: #ffffff;;
+}
+
+#main-navigation {
+  background: #1a1a1a;
+}
+
+#main-navigation ul li {
+  background: #1a1a1a;
+  margin-right: 0;
+}
+
+#main-navigation ul li.active {
+  background: #f0f0ee;
+}
+
+#main-navigation ul li a:link, #main-navigation ul li a:visited, #main-navigation ul li a:hover, #main-navigation ul li a:active,
+.secondary-navigation ul li a:link, .secondary-navigation ul li a:visited, .secondary-navigation ul li a:hover, .secondary-navigation ul li a:active,
+#user-navigation ul li a:link, #user-navigation ul li a:visited, #user-navigation ul li a:hover, #user-navigation ul li a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.secondary-navigation li a:hover {
+  background: #666666;
+}
+
+#main-navigation ul li.active a:link, #main-navigation ul li.active a:visited, #main-navigation ul li.active a:hover, #main-navigation ul li.active a:active {
+  color: #1a1a1a;
+}
+
+.secondary-navigation {
+  background: #36393d;
+  border-bottom-color: #1a1a1a;
+}
+
+.secondary-navigation ul li.active, .secondary-navigation ul li.active a:hover {
+  background-color: #1a1a1a;
+}
+
+#footer .block {
+  color: #FFF;
+  background: #1a1a1a;
+}
+
+#footer .block p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* pagination */
+
+.pagination a, .pagination span {
+  background: #cfcfcf;
+  -moz-border-radius: 3px;
+  border: 1px solid #c1c1c1;
+}
+
+.pagination span.current {
+  background: #36393d;
+  color: #FFF;
+  border: 1px solid #36393d;
+}
+
+.pagination a {
+  color: #1a1a1a;
+}
+
+.pagination a:hover {
+  border: 1px solid #666;
+}
+
+/* tables */
+
+.table th {
+  background: #36393d;  
+  color: #FFF;
+}
+
+.table td {
+  border-bottom:1px solid #F0F0EE;
+}
+
+.table tr.even {
+  background: #ebebeb;
+}
+
+/* forms */
+
+.form label.label {
+  color: #666666;
+}
+
+.form input.text_field, .form textarea.text_area {
+  width: 100%;
+  border: 1px solid #cfcfcf;
+}
+
+.form input.button {
+  background: #cfcfcf;
+  -moz-border-radius: 5px;
+  border: 1px solid #c1c1c1;
+  padding: 2px 5px;
+  cursor: pointer;
+  color: #36393d;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.form input.button:hover {
+  border: 1px solid #666;
+}
+
+.form .description {
+  font-style: italic;
+  color: #8C8C8C;
+  font-size: .9em;
+}
+
+.form .navform a {
+  color: #cc0000;
+}
+
+/* flash-messages */
+.flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align:center;
+  margin: 0 auto 15px;
+
+}
+
+.flash .message p {
+  margin:8px;
+}
+.flash .error {
+  border: 1px solid #fbb;
+  background-color: #fdd;
+}
+.flash .warning {
+  border: 1px solid #fffaaa;
+  background-color: #ffffcc;
+}
+.flash .notice {
+  border: 1px solid #1FDF00;
+  background-color: #BBFFB6;
+}
+
+/* lists */
+
+ul.list li {
+  border-bottom-color: #F0F0EE;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+ul.list li .item .avatar {
+  border-color: #F0F0EE;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2px;
+}
+
+/* box */
+
+#box .block {
+  background: #FFF;
+}
+
+#box .block h2 {
+  background: #36393d;
+  color: #FFF;
+}
+
+
+/* rounded borders */
+
+#main, #main-navigation, #main-navigation li, .secondary-navigation, #main .block, #sidebar .block, #sidebar h3, ul.list li,
+#footer .block, .form input.button, #box .block, #box .block h2 {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+}
+
+.secondary-navigation li.first a, .secondary-navigation ul li.first, .table th.first, .table th.first {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+}
+
+.table th.last {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+}
+
+.secondary-navigation ul li.first {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+}
+
+#sidebar, #sidebar .block, #main .block, #sidebar ul.navigation, ul.list li, #footer .block, .form input.button, #box .block {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+}
+
+.secondary-navigation {
+  border-bottom-width: 5px;
+}
+
+
+
+#MB_overlay {
+	position: absolute;
+	margin: auto;
+	top: 0;	left: 0;
+	width: 100%; height: 100%;
+	z-index: 9999;
+	background-color: #000!important;
+}
+#MB_overlay[id] { position: fixed; }
+
+#MB_window {
+	position: absolute;
+	top: 0;
+	border: 0 solid;
+	text-align: left;
+	z-index: 10000;
+}
+#MB_window[id] { position: fixed!important; }
+
+#MB_frame {
+	position: relative;
+	background-color: #EFEFEF;
+	height: 100%;
+}
+
+#MB_header {
+	margin: 0;
+	padding: 0;
+}
+
+#MB_content {
+	padding: 6px .75em;
+	overflow: auto;
+}
+
+#MB_caption {
+	font: bold 100% "Lucida Grande", Arial, sans-serif;
+	text-shadow: #FFF 0 1px 0;
+	padding: .5em 2em .5em .75em;
+	margin: 0;
+	text-align: left;
+}
+
+#MB_close {
+	display: block;
+	position: absolute;
+	right: 5px; top: 4px;
+	padding: 2px 3px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 13px;
+}
+#MB_close:hover {
+	background: transparent;
+}
+
+#MB_loading {
+	padding: 1.5em;
+	text-indent: -10000px;
+	background: transparent url(/images/modalbox/spinner.gif) 50% 0 no-repeat;
+}
+
+/* Color scheme */
+#MB_frame {
+	padding-bottom: 7px;
+	-webkit-border-radius: 7px; 
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+#MB_window {
+	background-color: #EFEFEF;
+	color: #000;
+	-webkit-box-shadow: 0 8px 64px #000; 
+	-moz-box-shadow: 0 0 64px #000; 
+	box-shadow: 0 0 64px #000;
+	
+	-webkit-border-radius: 7px; 
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+#MB_content { border-top: 1px solid #F9F9F9; }
+#MB_header {
+  background-color: #DDD;
+  border-bottom: 1px solid #CCC;
+}
+#MB_caption { color: #000 }
+#MB_close { color: #777 }
+#MB_close:hover { color: #000 }
+
+
+/* Alert message */
+.MB_alert {
+	margin: 10px 0;
+	text-align: center;
+}
+
+/*  This is just an example, so feel free to re-style it completely */ 
+
+.wice_grid {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0px
+}
+
+.wice_grid th { 
+  background-color: #dfdfdf; 
+  font-weight: bold; 
+  text-shadow: rgb(204, 204, 204) 0px 1px 0px; 
+  height: 2em;
+  padding: 0 1em;
+  
+}
+.wice_grid th a { 
+  color: #000; 
+}
+.wice_grid th a:hover { 
+  color: #333; 
+}
+
+.wice_grid tr.wice_grid_title_row th,  
+.wice_grid tr.wice_grid_filter_row th{
+  background-color: #dddddd;
+  vertical-align: top;
+}
+
+
+
+.wice_grid th.filter_icons, .wice_grid th.hide_show_icon {
+  text-align: right ;
+}
+
+.wice_grid thead {
+  border-bottom: 1px solid #666;
+}
+
+.wice_grid tr.odd {
+  background-color: #fff;
+}
+
+.wice_grid tr.even {
+  background-color: #eeeeee;
+}
+
+.wice_grid td {
+  border-bottom: 1px dotted #9999CC;
+  height: 2.5em;
+  padding: 0 1em;
+}
+
+.wice_grid .desc,  .wice_grid .asc{ 
+  padding-right: 18px; 
+  text-decoration:none;
+}
+
+.wice_grid .desc { 
+  background: transparent url(/images/icons/grid/arrow_down.gif) right no-repeat
+}
+.wice_grid .asc  { 
+  background: transparent url(/images/icons/grid/arrow_up.gif)   right no-repeat
+}
+
+.wice_grid th div.date-filter {
+  text-align: left;
+}
+
+.wice_grid tr.even td.active_filter  { background-color: #ddddff; }
+.wice_grid tr.odd td.active_filter  { background-color: #eeeeff; }
+
+.wice_grid tr.even td.sorted { background-color: #ffffcc; }
+.wice_grid tr.odd td.sorted { background-color: #ffffee; }
+
+
+.wice_grid a.date_label {text-decoration: none;}
+.wice_grid a.date_label:hover {text-decoration: line-through;}
+
+
+.wice_grid_container .pagination {
+  float: left;
+}
+
+.wice_grid_container .pagination_status {
+  font-weight: bold;
+  float: right;
+}
+
+.wice_grid_container .pagination_status .show_all_link a {
+  text-decoration: none;
+  font-size: 80%;
+}
+
+.wice_grid .custom_dropdown_container { position: relative; padding-right: 9px;}
+.wice_grid .custom_dropdown_container .toggle_multi_select_icon { position:absolute; top:0; right:0;  }
+
+.wice_grid .text_filter_container { position: relative; padding-right: 13px;}
+.wice_grid .text_filter_container .negation_checkbox { position:absolute; top:0; right:0;  }
+
+
+/*  Saved Queries  */
+
+.wice_grid_container h3 {
+  font-family: 'Lucida Grande';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.wice_grid_query_panel {
+  width: 400px;
+  border:1px solid #ddd;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  padding : 5px;
+}
+
+
+.wice_grid_query_panel .query_list{
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-left : 0px;  
+}
+
+.wice_grid_query_panel .query_list li a.query_load_link {
+  text-decoration: none;
+}
+
+
+.wice_grid_query_panel .query_list li a.current {
+  font-weight: bold;
+  text-decoration: underline;  
+}
+
+
+.wice_grid_query_panel .query_list li a.query_load_link:hover {
+  text-decoration: underline;
+}
+
+
+.wice_grid_query_panel  .wice_grid_notice {
+  padding:.4em;
+  margin-bottom:1em;
+  border:2px solid #ddd;
+  background:#FFF6BF;
+  color:#514721;
+  border-color:#FFD324;
+}
+
+
+.wice_grid_query_panel  .errorExplanation {
+  padding:.4em;
+  margin-bottom:1em;
+  border:2px solid #ddd;
+  background:#FBE3E4;
+  color:#8a1f11;
+  border-color:#FBC2C4;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-left : 0px;
+}
+
+
+
+
+div.calendar
+{
+  font-size: smaller;
+  color: #000;
+  z-index: 5;
+}
+
+div.calendar.popup
+{
+  margin-left: -40px;
+  margin-top: -100px;
+}
+
+div.calendar table
+{
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+div.calendar thead {
+  background-color: white;
+}
+
+div.calendar td,
+div.calendar th
+{
+  padding: 3px;
+  text-align: center;
+}
+
+div.calendar td.title
+{
+  font-weight: bold;
+}
+
+div.calendar th
+{
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+  color: #555;
+}
+
+div.calendar tr.days td {
+  width: 2em;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.calendar tr.days td:hover,
+div.calendar td.cvbutton:hover
+{
+  background-color: #34ABFA;
+  cursor: pointer;
+}
+
+
+div.calendar tr td.closeButton:hover
+{
+  background-color: #34ABFA;
+  cursor: pointer;
+}
+
+
+div.calendar tr.days td:active
+div.calendar td.cvbutton:active
+{
+  background-color: #cde;
+}
+
+div.calendar tr.days td.selected
+{
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+}
+
+div.calendar tr.days td.today
+{
+  font-weight: bold;
+  color: #D50000;
+}
+
+div.calendar tr.days td.otherDay
+{
+  color: #bbb;
+}
+
+div.calendar .draggableHandler{
+  cursor: move;
+}
+
+/*  styles for the date_picker Rails plugin */
+span.date_picker a.date_label{
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+span.date_picker a.date_label:hover{text-decoration: line-through;}
+
+span.date_picker span.trigger:hover{
+  cursor: pointer;
+}
