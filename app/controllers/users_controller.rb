@@ -10,29 +10,36 @@ class UsersController < ApplicationController
   def create
     update and return if current_user
     @user = User.new(params[:user])
-    if @user.save
-      UserSession.create(@user, false)
-      @user.deliver_verification_instructions!
-      flash[:notice] = "Thank you for signing up! You are now logged in."
-      redirect_to root_url
-    else
-      render :action => 'new'
+    @user.save do |result|
+      if result
+         UserSession.create(@user, false)
+        @user.deliver_verification_instructions!
+        flash[:notice] = "Thank you for signing up! You are now logged in."
+        redirect_to root_url
+      else
+        render :action => 'new'
+      end
     end
   end
 
   def update
     @user = current_user
-    if @user.update_attributes(params[:user])
-      @user.deliver_verification_instructions! unless @user.verified
-      if @user.anonymous
-        @user.identify!
-        flash[:notice] = "Successfully registered"
-      else
-        flash[:notice] = "Successfully modified your account"
+    @user.attributes = params[:user]
+    @user.save do |result|
+      if result
+        if @user.update_attributes(params[:user])
+          @user.deliver_verification_instructions! unless @user.verified
+          if @user.anonymous
+            @user.identify!
+            flash[:notice] = "Successfully registered"
+          else
+            flash[:notice] = "Successfully modified your account"
+          end
+          redirect_to root_url
+        else
+          render :action => 'edit'
+        end
       end
-      redirect_to root_url
-    else
-      render :action => 'edit'
     end
   end
 
