@@ -23,14 +23,14 @@ class UsersController < ApplicationController
   def update
     @user = current_user
     if @user.update_attributes(params[:user])
-      @user.deliver_verfication_instructions! unless @user.verified
+      @user.deliver_verification_instructions! unless @user.verified
       if @user.anonymous
         @user.identify!
         flash[:notice] = "Successfully registered"
       else
         flash[:notice] = "Successfully modified your account"
       end
-      redirect_to users_url
+      redirect_to root_url
     else
       render :action => 'edit'
     end

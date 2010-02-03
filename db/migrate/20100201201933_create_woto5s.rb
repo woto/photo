@@ -2,6 +2,7 @@ class CreateWoto5s < ActiveRecord::Migration
   def self.up
     create_table :woto5s do |t|
       t.string :name
+      t.references :user
 
       t.timestamps
     end

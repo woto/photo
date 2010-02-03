@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   acts_as_authentic
   #attr_accessible :username, :email, :password, :password_confirmation, :anonymous, :verified
   #attr_accessor :password
+
+  has_one :woto5s
   
   validates_presence_of :username
   validates_uniqueness_of :username, :email, :allow_blank => true

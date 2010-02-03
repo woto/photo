@@ -9,9 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100202160542) do
+ActiveRecord::Schema.define(:version => 20100202230427) do
 
-  create_table "admin_printer_types", :force => true do |t|
+  create_table "images", :force => true do |t|
+    t.string   "file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,6 +46,15 @@ ActiveRecord::Schema.define(:version => 20100202160542) do
     t.datetime "updated_at"
   end
 
+  create_table "photos", :force => true do |t|
+    t.integer  "image_id"
+    t.integer  "paper_price_id"
+    t.integer  "order_id"
+    t.integer  "count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "printer_types", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -60,15 +77,16 @@ ActiveRecord::Schema.define(:version => 20100202160542) do
     t.string   "crypted_password"
     t.string   "password_salt"
     t.string   "persistence_token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "anonymous",         :default => false
     t.string   "perishable_token"
     t.boolean  "verified",          :default => false
+    t.boolean  "anonymous",         :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "woto5s", :force => true do |t|
     t.string   "name"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

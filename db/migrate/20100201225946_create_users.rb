@@ -5,7 +5,10 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :crypted_password
       t.string :password_salt
-      t.string :persistence_token, :null => true      
+      t.string :persistence_token
+      t.string :perishable_token
+      t.boolean :verified, :default => false
+      t.boolean :anonymous, :default => false
       t.timestamps
     end
   end
