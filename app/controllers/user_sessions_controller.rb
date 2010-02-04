@@ -18,6 +18,8 @@ class UserSessionsController < ApplicationController
         render :action => 'new'
       end
     end
+    i = 1
+    #render :action => 'new'
   end
   
   def destroy

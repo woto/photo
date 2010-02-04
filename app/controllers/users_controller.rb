@@ -8,11 +8,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    update and return if current_user
+    #redirect_to account_url if current_user
     @user = User.new(params[:user])
     @user.save do |result|
       if result
-         UserSession.create(@user, false)
+        UserSession.create(@user, false)
         @user.deliver_verification_instructions!
         flash[:notice] = "Thank you for signing up! You are now logged in."
         redirect_to root_url
@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    debugger
     @user = current_user
     @user.attributes = params[:user]
     @user.save do |result|
