@@ -5,8 +5,9 @@ class User < ActiveRecord::Base
     # optional, but if a user registers by openid, he should at least share his email-address with the app
     #c.validate_email_field = false
     # fetch email by ax
-    c.openid_required_fields = [:nickname, "http://axschema.org/contact/email"]
+    c.openid_required_fields = [:email, :nickname, "http://axschema.org/namePerson/friendly", "http://axschema.org/contact/email"]
     c.login_field = "username"
+    c.openid_optional_fields = [:timezone, "http://axschema.org/pref/timezone", "http://axschema.org/media/image/default"]
 
   end
 
