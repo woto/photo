@@ -2,3 +2,11 @@
   float: right;
   font-size: 12px;
 }
+
+input#user_openid_identifier, input#user_session_openid_identifier {
+  background: url(http://openid.net/images/login-bg.gif) no-repeat;
+  background-color: #FFF;
+  color: #000;
+  background-position: 0 50%;
+  padding-left: 18px;
+} 
