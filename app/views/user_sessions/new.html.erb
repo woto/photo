@@ -1,6 +1,6 @@
 <% title "Log in" %>
 
-<p>Don't have an account? <%= link_to "Sign up!", signup_path %></p>
+<p>Don't have an account? <%= link_to t("register"), register_path %></p>
 
 <% form_for @user_session, :url => user_session_path do |f| %>
   <%= f.error_messages %>

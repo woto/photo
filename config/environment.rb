@@ -35,6 +35,17 @@ Rails::Initializer.run do |config|
   config.gem 'ruby-openid', :version => '2.1.7', :lib => 'openid'
   #config.gem 'authlogic-oid', :version => '1.0.4', :lib => 'authlogic_openid'
 
+  config.action_mailer.default_url_options = { :host => "woto-netbook" }
+  config.action_mailer.smtp_settings = {
+    :address  => "woto-netbook",
+#    :port  => 25, 
+    :domain  => "woto-netbook",
+#    :user_name  => "mail@example.com",
+#    :password  => "foobar",
+#    :authentication  => :login
+  }
+
+
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]

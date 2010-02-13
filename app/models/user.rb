@@ -1,20 +1,18 @@
 class User < ActiveRecord::Base
   acts_as_authentic do |c|
-    #c.openid_required_fields = [:nickname, :email]
-    #c.validate_login_field = false
-    # optional, but if a user registers by openid, he should at least share his email-address with the app
-    #c.validate_email_field = false
-    # fetch email by ax
     c.openid_required_fields = [:email, :nickname, "http://axschema.org/namePerson/friendly", "http://axschema.org/contact/email"]
     c.login_field = "username"
-    c.openid_optional_fields = [:timezone, "http://axschema.org/pref/timezone", "http://axschema.org/media/image/default"]
+    #c.openid_optional_fields = [:timezone, "http://axschema.org/pref/timezone"]
 
   end
 
   #attr_accessible :username, :email, :password, :password_confirmation, :anonymous, :verified
   #attr_accessor :password
 
-  has_one :woto5s
+  has_one :woto5
+  has_many :images
+  has_many :photos
+  has_many :orders
   
   def identify!
     self.anonymous = false
@@ -46,21 +44,37 @@ class User < ActiveRecord::Base
     Notifier.deliver_verification_confirmation(self)
   end
 
+  #private
+  #
+  #def map_openid_registration(registration)
+  #  self.email = registration["email"] if email.blank?
+  #  self.username = registration["nickname"] if username.blank?
+  #end
+
   private
 
   def map_openid_registration(registration)
-    self.email = registration["email"] if email.blank?
-    self.username = registration["nickname"] if username.blank?
-  end
-
-  private
-
-  def map_openid_registration(registration)
-    debugger
     if registration.empty?
       # no email returned
+      self.username_autoset = false
       self.email_autoset = false
     else
+
+      # nickname by sreg
+      unless registration["nickname"].nil? && registration["nickname"].blank?
+        self.username = registration["nickname"]
+        self.username_autoset = true
+      else
+      # nickname by ax
+        unless registration['http://axschema.org/namePerson/friendly'].nil?
+          self.username_autoset = true
+          #self.username = ...
+          raise Exception
+        else
+          self.username_autoset = false
+        end
+      end
+
       # email by sreg
       unless registration["email"].nil? && registration["email"].blank?
         self.email = registration["email"]

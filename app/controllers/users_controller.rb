@@ -8,10 +8,13 @@ class UsersController < ApplicationController
   end
 
   def create
+    debugger
     #redirect_to account_url if current_user
     @user = User.new(params[:user])
     @user.save do |result|
+      debugger
       if result
+        debugger
         UserSession.create(@user, false)
         @user.deliver_verification_instructions!
         flash[:notice] = "Thank you for signing up! You are now logged in."
@@ -42,6 +45,14 @@ class UsersController < ApplicationController
         end
       end
     end
+  end
+
+  def destroy
+    @user = current_user
+    current_user_session.destroy
+    @user.destroy
+    flash[:notice] = "Account deleted!"
+    redirect_to root_url
   end
 
 end

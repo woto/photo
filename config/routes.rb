@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.signup 'signup', :controller => 'users', :action => 'new'
+  map.register 'register', :controller => 'users', :action => 'new'
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   map.login 'login', :controller => 'user_sessions', :action => 'new'
 
@@ -9,7 +9,13 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :user_session
   map.resources :users
 
+  map.resources :photos
+  map.resources :images
+  map.resources :orders
+
   map.resource :woto5
+
+  map.resources :password_resets
 
   map.root :controller => 'woto5s'
 

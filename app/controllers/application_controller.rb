@@ -7,8 +7,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
-  
+  filter_parameter_logging :password, :password_confirmation
   helper_method :current_user, :current_user_session
 
   private
@@ -23,12 +22,33 @@ class ApplicationController < ActionController::Base
     @current_user = current_user_session && current_user_session.user
   end
 
-  def require_login
-    login_as_trial_user unless current_user_session
+  def require_any_user
+    login_as_trial_user unless current_user
+  end
+
+  def require_registered_user
+    unless current_user && !current_user.anonymous?
+      store_location
+      flash[:notice] = 'Вы должны быть залогинеными, чтобы получить доступ к этой странице'
+      redirect_to login_url
+      return false
+    end
+  end
+
+  def require_no_user
+    if current_user && !current_user.anonymous?
+      store_location
+      flash[:notice] = 'Вы должны быть не залогинеными, чтобы получить доступ к этой странице'
+      redirect_to account_url
+      return false
+    end
+  end
+
+  def store_location
+    session[:return_to] = request.request_uri
   end
 
   def login_as_trial_user
-    debugger
     name = "anonymous_#{session[:session_id]}"
     UserSession.create(User.find_by_username(name) || User.create(:username => name, :password => name, :password_confirmation => name, :anonymous => true),false)
     @current_user_session = UserSession.find

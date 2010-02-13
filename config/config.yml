@@ -1,0 +1,6 @@
+development: &defaults
+  site_url: "http://woto-netbook"
+  admin_email: oganer@gmail.com
+  
+production:
+  <<: *defaults

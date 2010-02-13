@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100204144549) do
+ActiveRecord::Schema.define(:version => 20100213104406) do
 
   create_table "images", :force => true do |t|
     t.string   "file"
@@ -99,6 +99,7 @@ ActiveRecord::Schema.define(:version => 20100204144549) do
     t.datetime "updated_at"
     t.string   "openid_identifier"
     t.string   "email_autoset"
+    t.boolean  "username_autoset"
   end
 
   create_table "woto5s", :force => true do |t|

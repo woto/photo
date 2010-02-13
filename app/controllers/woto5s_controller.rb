@@ -1,5 +1,5 @@
 class Woto5sController < ApplicationController
-  before_filter :require_login, :only => [:new,:edit,:create,:update,:destroy]
+  before_filter :require_registered_user, :only => [:new,:edit,:create,:update,:destroy]
   # GET /woto5s
   # GET /woto5s.xml
   def index
@@ -42,6 +42,8 @@ class Woto5sController < ApplicationController
   # POST /woto5s.xml
   def create
     @woto5 = Woto5.new(params[:woto5])
+    debugger
+    @woto5.user = current_user
 
     respond_to do |format|
       if @woto5.save
